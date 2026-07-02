@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ Plumbing 4 You | 24/7 Plumbing in Bakersfield &amp; Kern County</title>
+    <meta name="description" content="MZ Plumbing 4 You provides 24/7 plumbing across Bakersfield and Kern County: camera inspections, sewer repair, drain unclogging, leak repair, tankless water heaters, and water filtration.">
+    <meta name="keywords" content="MZ Plumbing 4 You, Bakersfield plumber, Kern County plumbing, emergency plumber, camera inspection, sewer repair, drain cleaning, tankless water heater, leak repair, Spanish speaking plumber">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="MZ Plumbing 4 You | 24/7 Plumbing in Bakersfield &amp; Kern County">
+    <meta property="og:description" content="Bakersfield and Kern County plumbing services: emergency calls, sewer repair, camera inspection, drain cleaning, leak repair, and tankless water heaters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mzplumbing4you.com">
+    <meta property="og:image" content="https://mzplumbing4you.com/wp-content/uploads/2024/05/logo-plumbingd-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MZ Plumbing 4 You">
+    <meta name="twitter:description" content="Bakersfield and Kern County plumber. 24/7 emergency plumbing service.">
+    <link rel="canonical" href="https://mzplumbing4you.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #1a1a2e;
+            background: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        /* ===== COLORS ===== */
+        :root {
+            --navy: #0f1b2d;
+            --navy-light: #1a2d4a;
+            --navy-mid: #243b5e;
+            --amber: #d4a13e;
+            --amber-light: #e8c56c;
+            --amber-dark: #b8862e;
+            --gold: #f0d28a;
+            --white: #ffffff;
+            --off-white: #f7f8fa;
+            --gray-light: #e8ebf0;
+            --gray: #6b7280;
+            --gray-dark: #374151;
+            --text: #1a1a2e;
+            --shadow: 0 4px 20px rgba(15, 27, 45, 0.08);
+            --shadow-lg: 0 12px 40px rgba(15, 27, 45, 0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: 0.3s ease;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--navy);
+            transition: var(--transition);
+        }
+        .header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            height: 64px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--amber);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .logo-text span { color: var(--amber); }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            padding: 0.5rem 0.875rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            background: rgba(255,255,255,0.08);
+        }
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            background: var(--amber) !important;
+            color: var(--navy) !important;
+            padding: 0.5rem 1rem !important;
+            border-radius: var(--radius-sm) !important;
+            font-weight: 700 !important;
+            font-size: 0.85rem !important;
+            white-space: nowrap;
+            transition: var(--transition);
+        }
+        .nav-cta:hover { background: var(--amber-light) !important; }
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.25rem;
+            z-index: 1001;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+        .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 0 4rem;
+            background: var(--navy);
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.06;
+            filter: saturate(0.7) blur(1px);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15,27,45,0.92) 0%, rgba(26,45,74,0.85) 50%, rgba(15,27,45,0.92) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 720px;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(212, 161, 62, 0.15);
+            border: 1px solid rgba(212, 161, 62, 0.3);
+            color: var(--amber-light);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.02em;
+        }
+        .hero h1 {
+            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 1.25rem;
+        }
+        .hero h1 span {
+            color: var(--amber);
+        }
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: rgba(255,255,255,0.75);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+        .btn-primary {
+            background: var(--amber);
+            color: var(--navy);
+        }
+        .btn-primary:hover {
+            background: var(--amber-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 161, 62, 0.35);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.25);
+        }
+        .btn-outline:hover {
+            border-color: var(--amber);
+            color: var(--amber);
+            transform: translateY(-2px);
+        }
+        .btn-lg {
+            padding: 1.125rem 2.5rem;
+            font-size: 1.1rem;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .hero-stat h3 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--amber);
+        }
+        .hero-stat p {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 0;
+        }
+
+        /* ===== PHONE RIBBON ===== */
+        .phone-ribbon {
+            background: var(--amber);
+            padding: 0.75rem 0;
+            text-align: center;
+        }
+        .phone-ribbon a {
+            color: var(--navy);
+            font-weight: 800;
+            font-size: 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+        .phone-ribbon a:hover { color: var(--navy-light); }
+
+        /* ===== SECTION COMMON ===== */
+        section { padding: 5rem 0; }
+        .section-label {
+            display: inline-block;
+            color: var(--amber-dark);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.75rem;
+        }
+        .section-title {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 1.05rem;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .section-header .section-subtitle { margin: 0 auto; }
+
+        /* ===== SERVICES ===== */
+        #services { background: var(--off-white); }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem 1.75rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--amber);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(212, 161, 62, 0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+        .service-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.625rem;
+        }
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .service-link {
+            color: var(--amber-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+        .service-link:hover { color: var(--amber); gap: 0.5rem; }
+        .service-badge {
+            display: inline-block;
+            background: #ef4444;
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.2rem 0.6rem;
+            border-radius: 50px;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        .about-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+        .about-image-badge {
+            position: absolute;
+            bottom: 1.25rem;
+            left: 1.25rem;
+            background: var(--navy);
+            color: var(--white);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .about-image-badge span { color: var(--amber); }
+        .about-content .section-title { margin-bottom: 1.25rem; }
+        .about-content p {
+            color: var(--gray);
+            margin-bottom: 1.25rem;
+            line-height: 1.7;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        .about-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gray-dark);
+        }
+        .about-features li::before {
+            content: '✓';
+            color: var(--amber-dark);
+            font-weight: 800;
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: var(--navy);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .cta-banner h2 {
+            font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+        .cta-banner p {
+            color: rgba(255,255,255,0.7);
+            max-width: 560px;
+            margin: 0 auto 1.75rem;
+            font-size: 1.05rem;
+        }
+        .cta-phone {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--amber);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.625rem;
+            transition: var(--transition);
+        }
+        .cta-phone:hover { color: var(--amber-light); }
+
+        /* ===== CONTACT / MAP ===== */
+        #contact { background: var(--off-white); }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .contact-info h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-item-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(212, 161, 62, 0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-item h4 {
+            font-size: 0.85rem;
+            color: var(--gray);
+            font-weight: 500;
+            margin-bottom: 0.125rem;
+        }
+        .contact-item p, .contact-item a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+        .contact-item a:hover { color: var(--amber-dark); }
+        .contact-hours {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+        .contact-hours h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.375rem 0;
+            font-size: 0.9rem;
+        }
+        .hours-row span:first-child { color: var(--gray); }
+        .hours-row span:last-child { font-weight: 600; color: var(--navy); }
+        .hours-emergency {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--gray-light);
+            font-weight: 700;
+            color: var(--amber-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+        .map-placeholder {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            height: 100%;
+            min-height: 360px;
+            background: var(--gray-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .map-placeholder iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 360px;
+            border: 0;
+        }
+        .map-fallback {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            color: var(--gray);
+            gap: 0.75rem;
+        }
+        .map-fallback .map-icon { font-size: 3rem; }
+        .map-fallback p { font-size: 0.9rem; max-width: 240px; }
+
+        /* ===== TESTIMONIALS ===== */
+        #testimonials { background: var(--white); }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .testimonial-card {
+            background: var(--off-white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            line-height: 1;
+            color: var(--amber);
+            opacity: 0.3;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .testimonial-card p {
+            color: var(--gray-dark);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            font-style: italic;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .testimonial-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--navy);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .testimonial-name { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+        .testimonial-location { font-size: 0.8rem; color: var(--gray); }
+        .stars { color: var(--amber); letter-spacing: 2px; font-size: 0.85rem; }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--navy);
+            color: rgba(255,255,255,0.7);
+            padding: 3rem 0 1.5rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-brand .logo { font-size: 1.15rem; margin-bottom: 1rem; }
+        .footer-brand p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            max-width: 320px;
+        }
+        .footer h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .footer-links li { margin-bottom: 0.5rem; }
+        .footer-links a {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            transition: var(--transition);
+        }
+        .footer-links a:hover { color: var(--amber); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.8rem;
+        }
+        .footer-bottom a { color: var(--amber); }
+        .footer-bottom a:hover { text-decoration: underline; }
+
+        /* ===== FLOATING PHONE ===== */
+        .floating-phone {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            background: var(--amber);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--navy);
+            box-shadow: 0 4px 20px rgba(212, 161, 62, 0.4);
+            transition: var(--transition);
+            animation: pulse-phone 2s infinite;
+        }
+        .floating-phone:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(212, 161, 62, 0.5);
+        }
+        @keyframes pulse-phone {
+            0%, 100% { box-shadow: 0 4px 20px rgba(212, 161, 62, 0.4); }
+            50% { box-shadow: 0 4px 30px rgba(212, 161, 62, 0.7); }
+        }
+
+        /* ===== SCROLL TO TOP ===== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            z-index: 999;
+            width: 44px;
+            height: 44px;
+            background: var(--navy);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.125rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+        .scroll-top.visible { display: flex; }
+        .scroll-top:hover { background: var(--navy-light); transform: translateY(-2px); }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .about-image img { height: 320px; }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            .map-placeholder { min-height: 300px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--navy);
+                flex-direction: column;
+                align-items: stretch;
+                padding: 5rem 1.5rem 2rem;
+                gap: 0.25rem;
+                transition: right 0.35s ease;
+                box-shadow: -10px 0 40px rgba(0,0,0,0.3);
+            }
+            .nav-links.open { right: 0; }
+            .nav-links a {
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+            }
+            .nav-toggle { display: flex; }
+            .nav .nav-cta { display: none; }
+            .nav-links .nav-cta-mobile {
+                display: flex !important;
+                margin-top: 1rem;
+                justify-content: center;
+                background: var(--amber) !important;
+                color: var(--navy) !important;
+                padding: 0.875rem !important;
+                border-radius: var(--radius-sm) !important;
+                font-weight: 700 !important;
+            }
+            .hero { min-height: 90vh; padding: 5rem 0 3rem; }
+            .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+            .hero-stat h3 { font-size: 1.4rem; }
+            section { padding: 3.5rem 0; }
+            .services-grid { grid-template-columns: 1fr; }
+            .cta-phone { font-size: 1.5rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero-actions { flex-direction: column; width: 100%; }
+            .hero-actions .btn { width: 100%; }
+            .service-card { padding: 1.5rem; }
+            .about-image img { height: 240px; }
+            .about-features { grid-template-columns: 1fr; }
+            .floating-phone { width: 52px; height: 52px; font-size: 1.25rem; bottom: 1rem; right: 1rem; }
+        }
+
+        @media (min-width: 769px) {
+            .nav-links .nav-cta-mobile { display: none !important; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <div class="logo-icon">🔧</div>
+                    <span class="logo-text">MZ Plumbing <span>4 You</span></span>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#estimate">Request Estimate</a>
+                    <a href="#contact">Contact</a>
+                    <a href="tel:+16613902869" class="nav-cta-mobile">Call MZ Plumbing</a>
+                </div>
+                <a href="tel:+16613902869" class="nav-cta">Call MZ Plumbing</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://s3-media0.fl.yelpcdn.com/bphoto/JthoMj-RbR6D9d9Uztcq6w/o.jpg" alt="MZ Plumbing 4 You public work photo showing residential plumbing repair" loading="lazy">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">⭐ 4.5 Stars &bull; 8 Public Reviews &bull; English / Español</div>
+                <h1>Bakersfield <span>24/7 Plumbing</span> for Tankless Water Heaters, Drains &amp; Leaks</h1>
+                <p>MZ Plumbing 4 You serves Bakersfield and Kern County with emergency plumbing, camera inspections, sewer repair, drain unclogging, tankless water heaters, leak repair, water filtration, and clear English/Spanish support.</p>
+                <div class="hero-actions">
+                    <a href="tel:+16613902869" class="btn btn-primary btn-lg">Call MZ Plumbing</a>
+                    <a href="#estimate" class="btn btn-outline btn-lg">Request Same-Day Estimate</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>Family</h3>
+                        <p>Owned Team</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>4.5★</h3>
+                        <p>Public Reviews</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>24/7</h3>
+                        <p>Emergency Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHONE RIBBON ===== -->
+    <div class="phone-ribbon">
+        <div class="container">
+            <a href="tel:+16613902869">🚨 🚨 24/7 emergency plumbing in Bakersfield / Kern County — Call +1 661-390-2869</a>
+        </div>
+    </div>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Bakersfield Plumbing Services Built Around Real Customer Calls</h2>
+                <p class="section-subtitle">Bakersfield and Kern County plumbing services: water heater repair, leak repair, drain cleaning, sewer services, camera inspection, and 24/7 emergency plumbing.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔧</div>
+                    <h3>Leak Repair &amp; Pipe Work</h3>
+                    <p>Water leak repairs, pipe installation, fixture work, sprinkler line repairs, and smart water shutoff support for homes and small businesses.</p>
+                    <a href="#contact" class="service-link">Learn more →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">💧</div>
+                    <h3>Drain Cleaning &amp; Sewer Repair</h3>
+                    <p>Drain unclogging, sewer line services, camera inspections, waste line repairs, and clear service-area coverage across Bakersfield and Kern County.</p>
+                    <a href="#contact" class="service-link">Learn more →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔥</div>
+                    <h3>Tank &amp; Tankless Water Heaters</h3>
+                    <p>Water heater and tankless system repairs/installations, including urgent service praised by public reviewers for fast response.</p>
+                    <a href="#contact" class="service-link">Learn more →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🚨</div>
+                    <h3>24/7 Emergency Plumbing <span class="service-badge">Call Now</span></h3>
+                    <p>Burst pipe, water leak, clogged drain, sewer backup, or water heater problem? Call MZ Plumbing 4 You for emergency help in Bakersfield and Kern County.</p>
+                    <a href="tel:+16613902869" class="service-link">Call now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/zUVQt-XU92zfFEYgZqOvZA/o.jpg" alt="MZ Plumbing 4 You public water heater plumbing work photo" loading="lazy">
+                    <div class="about-image-badge">
+                        <span>4.5 ★</span> &bull; 8 Public Reviews
+                    </div>
+                </div>
+                <div class="about-content fade-in">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">MZ Plumbing 4 You: Bakersfield / Kern County Plumbing</h2>
+                    <p>MZ Plumbing 4 You provides reliable plumbing services across Bakersfield and Kern County. Customers mention Martin by name, describe responsive last-minute help, and praise water heater, leak, and pipe work. We serve residential and commercial clients with 24/7 emergency support.</p>
+                    <p>Our services include camera inspection, sewer repair, drain unclogging, leak repair, tankless water heaters, water filtration, and commercial plumbing. English and Spanish support available.</p>
+                    <ul class="about-features">
+                        <li>Bakersfield / Kern County</li>
+                        <li>English &amp; Spanish Signals</li>
+                        <li>4.5★ Public Reviews</li>
+                        <li>24/7 Emergency Service</li>
+                        <li>Camera Inspection</li>
+                        <li>Water Filtration Systems</li>
+                    </ul>
+                    <a href="#estimate" class="btn btn-primary">Request a Free Estimate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <div class="cta-banner">
+        <div class="container fade-in">
+            <h2>Emergency Plumbing in Bakersfield — Call 24/7</h2>
+            <p>Trusted by Bakersfield and Kern County homeowners and businesses for water heater repair, drain cleaning, sewer repair, leak detection, and emergency plumbing. Family-owned, responsive, and bilingual support.</p>
+            <a href="tel:+16613902869" class="cta-phone">Call MZ Plumbing</a>
+        </div>
+    </div>
+
+
+    <!-- ===== REAL WORK GALLERY ===== -->
+    <section id="gallery" style="background:var(--off-white);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Real Work Photos</span>
+                <h2 class="section-title">Show the Work, Not Stock Photos</h2>
+                <p class="section-subtitle">Real MZ Plumbing work photos from Bakersfield and Kern County job sites. Water heater repairs, leak fixes, drain and sewer work, and pipe installations.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/JthoMj-RbR6D9d9Uztcq6w/o.jpg" alt="MZ Plumbing sprinkler line repair public photo" loading="lazy" style="border-radius:12px;margin-bottom:1rem;aspect-ratio:4/3;object-fit:cover;width:100%;">
+                    <h3>Sprinkler / Pipe Repair</h3>
+                    <p>Professional sprinkler line and pipe repair for Bakersfield and Kern County residential and commercial properties.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/zUVQt-XU92zfFEYgZqOvZA/o.jpg" alt="MZ Plumbing water heater public photo" loading="lazy" style="border-radius:12px;margin-bottom:1rem;aspect-ratio:4/3;object-fit:cover;width:100%;">
+                    <h3>Water Heater Work</h3>
+                    <p>Fast water heater repair, installation, and maintenance. Tank and tankless systems. Emergency water heater service available.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/xKEZcVfOIk0mVJbuuO5mug/o.jpg" alt="MZ Plumbing leak repair public photo" loading="lazy" style="border-radius:12px;margin-bottom:1rem;aspect-ratio:4/3;object-fit:cover;width:100%;">
+                    <h3>Leak / Fixture Repair</h3>
+                    <p>Leak detection and repair, pipe work, and fixture installation for Bakersfield and Kern County homes and businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ESTIMATE REQUEST ===== -->
+    <section id="estimate">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Book / Request Service</span>
+                <h2 class="section-title">Request Same-Day Plumbing Help</h2>
+                <p class="section-subtitle">Emergency plumbing? Call 24/7. For drain cleaning, water heater, camera inspection, or water filtration — request a same-day estimate online.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Now</h3>
+                    <p>For leaks, backups, burst pipes, and water heater failures. One-tap mobile call CTA keeps urgent leads from bouncing.</p>
+                    <a href="tel:+16613902869" class="btn btn-primary" style="width:100%;">Call 24/7</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🗓️</div>
+                    <h3>Same-Day Estimate</h3>
+                    <p>For drain cleaning, camera inspection, fixtures, water filtration, and planned water heater work.</p>
+                    <a href="mailto:mzplumbing4you@gmail.com?subject=Plumbing%20estimate%20request&body=Hi%20MZ%20Plumbing%204%20You%2C%0A%0AI%27d%20like%20to%20request%20an%20estimate.%0A%0AService%20needed%3A%20%0AAddress%20/%20area%3A%20%0APreferred%20time%3A%20%0APhone%3A%20" class="btn btn-primary" style="width:100%;">Request Estimate</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🇪🇸</div>
+                    <h3>English / Español</h3>
+                    <p>Bakersfield and Kern County have a strong bilingual customer base. The site should make Spanish-friendly support obvious.</p>
+                    <a href="mailto:mzplumbing4you@gmail.com?subject=Solicitud%20de%20estimado%20de%20plomer%C3%ADa" class="btn btn-outline" style="width:100%;color:var(--navy);border-color:var(--amber);">Solicitar Estimado</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">Public Review Highlights</h2>
+                <p class="section-subtitle">Real customer review highlights gathered from public listings and rewritten as concise trust signals for Bakersfield homeowners.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p>"Martin was on time, courteous, efficient, helpful, and informative. The pricing was comparable or a little below average for the plumbing work."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MR</div>
+                        <div>
+                            <div class="testimonial-name">Gabrielle L.</div>
+                            <div class="testimonial-location">Bakersfield, CA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p>"We used them twice for last-minute plumbing issues. Very responsive father-and-son duo, and they helped when we needed service quickly."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JD</div>
+                        <div>
+                            <div class="testimonial-name">Erik H.</div>
+                            <div class="testimonial-location">Bakersfield, CA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p>"They fixed a water heater within an hour despite the rain. Fast response and solid work when it mattered."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SL</div>
+                        <div>
+                            <div class="testimonial-name">Bobby F.</div>
+                            <div class="testimonial-location">Kern County</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Contact Us</span>
+                <h2 class="section-title">Call or Request an Estimate</h2>
+                <p class="section-subtitle">Call 24/7 for emergency plumbing in Bakersfield and Kern County. For estimates on drain cleaning, water heaters, camera inspection, or filtration — email us or use the estimate request.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>📞 Call Us Anytime</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div>
+                                <h4>24/7 Phone</h4>
+                                <p><a href="tel:+16613902869" style="font-size:1.3rem;color:var(--amber-dark);">+1 661-390-2869</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:mzplumbing4you@gmail.com">mzplumbing4you@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div>
+                                <h4>Office</h4>
+                                <p>Bakersfield, CA<br>Kern County service area</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-hours">
+                        <h4>Business Hours</h4>
+                        <div class="hours-row">
+                            <span>Standard Calls</span>
+                            <span>Call for availability</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Emergency</span>
+                            <span>24/7 service advertised</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Languages</span>
+                            <span>English / Español signals</span>
+                        </div>
+                        <div class="hours-emergency">🚨 24/7 Emergency Service Available</div>
+                    </div>
+                </div>
+                <div class="map-placeholder fade-in">
+                    <iframe
+                        loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132164.6456396262!2d-119.13737825!3d35.37329325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea63719cbef5e9%3A0xbc5de7b7c2b2b3c8!2sBakersfield%2C%20CA!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="MZ Plumbing 4 You Bakersfield service area map"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">🔧</div>
+                        <span class="logo-text">MZ Plumbing <span>4 You</span></span>
+                    </a>
+                    <p>MZ Plumbing 4 You serves Bakersfield and Kern County with emergency plumbing, drains, sewer repair, water heaters, leak repair, water filtration, and camera inspections.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Leak Repair</a></li>
+                        <li><a href="#services">Drain Cleaning &amp; Sewer Repair</a></li>
+                        <li><a href="#services">Tankless Water Heaters</a></li>
+                        <li><a href="#services">Emergency Service</a></li>
+                        <li><a href="#services">Sewer Line Repair</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Service Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Bakersfield, CA</a></li>
+                        <li><a href="#contact">Kern County</a></li>
+                        <li><a href="#contact">Emergency Service</a></li>
+                        <li><a href="#contact">English / Español</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+16613902869">Call MZ Plumbing</a></li>
+                        <li><a href="mailto:mzplumbing4you@gmail.com">Email MZ</a></li>
+                        <li><a href="#contact">Call Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 MZ Plumbing 4 You LLC. All rights reserved.</span>
+                <span>Website by YellowMarket</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING PHONE BUTTON ===== -->
+    <a href="tel:+16613902869" class="floating-phone" aria-label="Request demo quote">📞</a>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        (function() {
+            'use strict';
+
+            // === Mobile Nav Toggle ===
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+
+            // Close nav on link click
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // === Header scroll effect ===
+            const header = document.getElementById('header');
+            let lastScroll = 0;
+
+            window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                header.classList.toggle('scrolled', scrollY > 50);
+
+                // Scroll to top button
+                const scrollBtn = document.getElementById('scrollTop');
+                if (scrollY > 400) {
+                    scrollBtn.classList.add('visible');
+                } else {
+                    scrollBtn.classList.remove('visible');
+                }
+
+                lastScroll = scrollY;
+            }, { passive: true });
+
+            // === Scroll to top ===
+            document.getElementById('scrollTop').addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // === Intersection Observer for fade-in animations ===
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                fadeElements.forEach(el => observer.observe(el));
+            } else {
+                // Fallback: show all immediately
+                fadeElements.forEach(el => el.classList.add('visible'));
+            }
+
+            // === Smooth scroll for anchor links ===
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const headerHeight = header.offsetHeight;
+                        const targetPos = target.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+                        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+                    }
+                });
+            });
+
+        })();
+    </script>
+</body>
+</html>
