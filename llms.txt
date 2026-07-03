@@ -1,0 +1,29 @@
+# YellowMarket
+
+> YellowMarket builds AI growth systems for local businesses and high-value professionals: AI-powered websites, AI chatbots and voice agents, lead automation, Google visibility, and growth content.
+
+## Primary URL
+- https://giteohub.github.io/yellowmarket/
+
+## Contact
+- Email: contact@yellowmarket.store
+- Phone: +1 (202) 773-7868
+- Entity: YellowMarket LLC, Wyoming, USA
+
+## Services
+- AI Websites: conversion-focused local business websites with schema markup, mobile-first layout, and fast loading.
+- AI Chatbot & Voice Agent: 24/7 lead qualification, booking support, and common question handling.
+- Lead Automation: missed-call text-back, automated follow-up, CRM integration, and SMS campaigns.
+- Google Visibility: Google Business Profile optimization, local SEO, review generation, and service pages.
+- Growth Content: weekly service pages, blog posts, and location pages written for customer search intent.
+
+## Typical process
+1. Free revenue leak audit.
+2. Leak map ranked by likely impact and speed to fix.
+3. Build and deploy the agreed systems.
+4. Monitor calls, leads, bookings, and recovered revenue.
+
+## Useful pages
+- Homepage: https://giteohub.github.io/yellowmarket/
+- Example client site: https://giteohub.github.io/yellowmarket/demos/client-demo/
+- Trade business demo: https://giteohub.github.io/yellowmarket/demos/mz-plumbing-4-you/
