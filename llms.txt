@@ -1,6 +1,6 @@
 # YellowMarket
 
-> YellowMarket builds AI growth systems for local businesses and high-value professionals: AI-powered websites, AI chatbots and voice agents, lead automation, Google visibility, and growth content.
+> YellowMarket builds AI growth systems for local businesses and high-value professionals: conversion-focused websites, Google visibility, lead capture, booking flows, and high-leverage AI workflows for expensive moments like calls, quoting, intake, follow-up, and hiring.
 
 ## Primary URL
 - https://yellowmarket.store/
@@ -11,19 +11,17 @@
 - Entity: YellowMarket LLC, Wyoming, USA
 
 ## Services
-- AI Websites: conversion-focused local business websites with schema markup, mobile-first layout, and fast loading.
-- AI Chatbot & Voice Agent: 24/7 lead qualification, booking support, and common question handling.
-- Lead Automation: missed-call text-back, automated follow-up, CRM integration, and SMS campaigns.
-- Google Visibility: Google Business Profile optimization, local SEO, review generation, and service pages.
-- Growth Content: weekly service pages, blog posts, and location pages written for customer search intent.
+- AI Website + Local Trust System: mobile-first business website, service pages, trust signals, click-to-call/contact paths, and schema markup.
+- Google Visibility: Google Business Profile cleanup checklist, review capture flow, local SEO structure, and service-area clarity.
+- Lead Follow-Up Automation: missed-call text-back, instant intake forms, booking reminders, analytics/tracking, and simple CRM handoff.
+- High-Leverage AI Workflows: first-to-know alerts, quote-from-field workflows, client intake engines, after-hours front desk, and candidate shortlisting.
 
 ## Typical process
 1. Free revenue leak audit.
 2. Leak map ranked by likely impact and speed to fix.
-3. Build and deploy the agreed systems.
-4. Monitor calls, leads, bookings, and recovered revenue.
+3. Fixed-scope pilot package.
+4. Launch, verify basics, then decide whether maintenance or deeper automation has ROI.
 
 ## Useful pages
 - Homepage: https://yellowmarket.store/
-- Example client site: https://yellowmarket.store/demos/client-demo/
 - Trade business demo: https://yellowmarket.store/demos/mz-plumbing-4-you/
