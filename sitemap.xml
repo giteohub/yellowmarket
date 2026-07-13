@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://yellowmarket.store/showroom/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://yellowmarket.store/demos/mz-plumbing-4-you/</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
