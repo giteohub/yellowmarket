@@ -102,8 +102,8 @@
     .trust{background:#111827;color:#fff;border-radius:34px;padding:42px;display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:center}.trust p{color:rgba(255,255,255,.7);font-weight:650}.trust-list{display:grid;gap:12px}.trust-list div{padding:16px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);font-weight:750}.trust-list span{color:#5eead4;font-family:'JetBrains Mono';margin-right:8px}
     .cta{background:#0f766e;color:#fff;text-align:center}.cta h2{max-width:900px;margin:auto}.cta p{max-width:720px;margin:20px auto 0;color:rgba(255,255,255,.78);font-size:1.1rem;font-weight:650}.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.cta .btn-secondary{background:#fff;color:#0f766e}
     footer{padding:34px 0;background:#111827;color:rgba(255,255,255,.72)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-inner b{color:#fff}
-    @media (max-width:900px){.nav-inner{gap:10px}.nav-links{order:3;width:100%;overflow-x:auto;gap:18px;padding:4px 0 2px;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}.hero-grid,.split,.trust{grid-template-columns:1fr}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr 1fr}.services-bento,.cases,.target-grid{grid-template-columns:1fr}.price-card.featured{transform:none}.section-head{display:block}.section-head p{margin-top:16px}.hero{padding-top:54px}.operator-top{grid-template-columns:120px 1fr}.portrait{width:120px;height:150px}}
-    @media (max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav-inner{min-height:68px}.nav-links{font-size:.82rem;gap:16px}.nav-cta .btn-secondary{display:none}h1{font-size:3.15rem}.hero-copy{font-size:1.04rem}.hero-actions .btn{width:100%}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.operator-card{padding:12px}.service-card,.price-card,.case-card,.pain-card,.benefit,.step,.target-card{padding:22px}section{padding:64px 0}.trust{padding:28px;border-radius:26px}.footer-inner{display:grid}}
+    @media (max-width:900px){.nav-inner{gap:10px}.nav-links{order:3;width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:8px 0 2px}.nav-links a{text-align:center;padding:10px 8px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-size:.82rem}.hero-grid,.split,.trust{grid-template-columns:1fr}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr 1fr}.services-bento,.cases,.target-grid{grid-template-columns:1fr}.price-card.featured{transform:none}.section-head{display:block}.section-head p{margin-top:16px}.hero{padding-top:40px}.operator-top{grid-template-columns:120px 1fr}.portrait{width:120px;height:150px}}
+    @media (max-width:560px){.wrap{width:min(100% - 24px,var(--max))}.nav-inner{min-height:68px}.nav-links{gap:4px}.nav-links a{font-size:.72rem;padding:8px 3px}.nav-cta .btn-secondary{display:none}.nav-cta .btn-primary{padding:12px 14px;font-size:.86rem}h1{font-size:3.15rem}.hero-copy{font-size:1.04rem}.hero-actions .btn{width:100%}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.operator-card{padding:12px}.service-card,.price-card,.case-card,.pain-card,.benefit,.step,.target-card{padding:22px}section{padding:64px 0}.trust{padding:28px;border-radius:26px}.footer-inner{display:grid}}
     @media (prefers-reduced-motion:reduce){*,html{scroll-behavior:auto!important;transition:none!important;animation:none!important}.btn:hover{transform:none}}
   </style>
   <script type="application/ld+json">
@@ -115,7 +115,7 @@
     <div class="wrap nav-inner">
       <a class="brand" href="#top" aria-label="YellowMarket home"><span class="brand-mark">Y</span><span>YellowMarket</span></a>
       <nav class="nav-links" aria-label="Sections">
-        <a href="#offer">Offer</a><a href="#targets">Who we help</a><a href="#what-you-get">What You Get</a><a href="#proof">Before/After</a><a href="#pricing">Pricing</a><a href="#steps">Steps</a>
+        <a href="#top">Home</a><a href="#offer">Offer</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
       </nav>
       <div class="nav-cta"><a class="btn btn-secondary" href="tel:+12027737868">Call</a><a class="btn btn-primary" href="mailto:contact@yellowmarket.store?subject=Free%20YellowMarket%20audit">Free audit</a></div>
     </div>
@@ -278,7 +278,7 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section id="contact" class="cta">
       <div class="wrap"><h2>Send your website. Get the leak map. Fix only what has ROI.</h2><p>If we cannot point to clear lost calls, lost bookings, weak Google trust, or follow-up gaps, you should not buy a package. If we can, the first fix is obvious.</p><div class="cta-actions"><a class="btn btn-secondary" href="mailto:contact@yellowmarket.store?subject=Free%20YellowMarket%20audit">Request free audit</a><a class="btn btn-orange" href="tel:+12027737868">Call (202) 773-7868</a></div></div>
     </section>
   </main>
