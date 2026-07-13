@@ -1,922 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YellowMarket — AI Growth Systems for Local Businesses</title>
-<meta name="description" content="YellowMarket builds AI-powered websites, chatbots, lead automation, Google visibility, and growth content for local businesses and high-value professionals.">
-<link rel="canonical" href="https://yellowmarket.store/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://yellowmarket.store/">
-<meta property="og:title" content="YellowMarket — AI Growth Systems for Local Businesses">
-<meta property="og:description" content="AI-powered websites, chatbots, lead automation, Google visibility, and growth content for local businesses and high-value professionals.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="YellowMarket — AI Growth Systems for Local Businesses">
-<meta name="twitter:description" content="Turn missed calls, slow follow-up, weak Google visibility, and broken booking paths into booked jobs and revenue.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<style>
-/* ===== RESET & BASE ===== */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#1e293b;background:#f8fafc;-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:inherit}
-ul,ol{list-style:none}
-img{max-width:100%;display:block}
-
-/* ===== VARIABLES ===== */
-:root{
-  --navy:#0f172a;
-  --navy-light:#1e293b;
-  --blue:#0369a1;
-  --blue-dark:#075985;
-  --gold:#f4c430;
-  --gold-dark:#d4a820;
-  --bg:#f8fafc;
-  --muted:#e8ecf1;
-  --card:#ffffff;
-  --text:#1e293b;
-  --text-secondary:#64748b;
-  --text-muted:#94a3b8;
-  --line:#e2e8f0;
-  --shadow:0 4px 24px rgba(15,23,42,.08);
-  --shadow-lg:0 12px 48px rgba(15,23,42,.12);
-  --max:1200px;
-  --radius:12px;
-  --radius-sm:8px;
-}
-
-/* ===== TYPOGRAPHY ===== */
-h1,h2,h3,h4,h5,h6{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;line-height:1.2;color:var(--navy)}
-h1{font-size:clamp(2rem,4.5vw,3.5rem);letter-spacing:-.02em}
-h2{font-size:clamp(1.5rem,3vw,2.25rem);letter-spacing:-.01em}
-h3{font-size:1.125rem}
-p{color:var(--text-secondary)}
-.mono{font-family:'IBM Plex Mono',monospace;font-weight:500}
-.mono-bold{font-family:'IBM Plex Mono',monospace;font-weight:600}
-
-/* ===== UTILITY ===== */
-.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:var(--radius-sm);font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:.9rem;border:none;cursor:pointer;transition:all .2s ease;line-height:1}
-.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{background:var(--gold-dark);transform:translateY(-1px);box-shadow:0 8px 24px rgba(244,196,48,.3)}
-.btn-outline{background:transparent;border:2px solid var(--navy);color:var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
-.btn-ghost{background:transparent;border:2px solid var(--line);color:var(--text)}.btn-ghost:hover{border-color:var(--navy);color:var(--navy)}
-.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-dark);transform:translateY(-1px)}
-.section{padding:clamp(60px,10vh,120px) 0}
-.section-dark{background:var(--navy);color:#fff}
-.section-dark h2,.section-dark h3,.section-dark p{color:#fff}
-.section-dark .eyebrow{color:var(--gold)}
-.section-muted{background:var(--muted)}
-.tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
-.tag-gold{color:var(--gold-dark)}
-
-/* ===== HEADER ===== */
-.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-.04em;color:#fff;display:flex;align-items:center;gap:8px}
-.logo-mark{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--gold);border-radius:6px;color:var(--navy);font-size:1rem;font-weight:800}
-.logo-text{color:#fff}.logo-text span{color:var(--gold)}
-.nav-links{display:flex;align-items:center;gap:4px}
-.nav-links a{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:600;font-size:.82rem;color:rgba(255,255,255,.75);padding:8px 14px;border-radius:var(--radius-sm);transition:all .2s}
-.nav-links a:hover{color:#fff;background:rgba(255,255,255,.06)}
-.nav-links .nav-cta{background:var(--gold);color:var(--navy);padding:10px 20px}.nav-links .nav-cta:hover{background:var(--gold-dark);color:var(--navy)}
-.hamb{display:none;background:var(--gold);color:var(--navy);border:none;padding:10px 18px;border-radius:var(--radius-sm);font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:.85rem;cursor:pointer}
-
-/* ===== HERO ===== */
-.hero{background:var(--navy);padding:140px 0 80px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(3,105,161,.08) 0%,transparent 70%)}
-.hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(244,196,48,.05) 0%,transparent 70%)}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
-.hero h1{color:#fff;margin-bottom:20px}
-.hero h1 strong{color:var(--gold)}
-.hero p{color:rgba(255,255,255,.7);font-size:1.1rem;line-height:1.7;margin-bottom:32px;max-width:520px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-.hero-url{display:flex;gap:0;max-width:480px;margin-bottom:20px}
-.hero-url input{flex:1;padding:14px 18px;border:2px solid rgba(255,255,255,.15);border-radius:var(--radius-sm) 0 0 var(--radius-sm);background:rgba(255,255,255,.06);color:#fff;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:.9rem;outline:none;transition:border-color .2s}
-.hero-url input::placeholder{color:rgba(255,255,255,.35)}
-.hero-url input:focus{border-color:var(--gold)}
-.hero-url .btn{border-radius:0 var(--radius-sm) var(--radius-sm) 0}
-.hero-contact{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.hero-contact a{color:rgba(255,255,255,.6);font-size:.9rem;transition:color .2s}
-.hero-contact a:hover{color:var(--gold)}
-.hero-contact .phone-link{color:var(--gold);font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.05rem}
-.hero-visual{position:relative}
-.hero-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:28px;backdrop-filter:blur(2px)}
-.hero-card-title{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-.hero-card-item{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06)}
-.hero-card-item:last-child{border-bottom:none}
-.hero-card-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.hero-card-dot.red{background:#ef4444}
-.hero-card-dot.green{background:#22c55e}
-.hero-card-dot.amber{background:#eab308}
-.hero-card-text{flex:1}
-.hero-card-text .label{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:600;font-size:.85rem;color:#fff}
-.hero-card-text .desc{font-size:.78rem;color:rgba(255,255,255,.5)}
-.hero-card-value{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.85rem;color:var(--gold)}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(244,196,48,.1);border:1px solid rgba(244,196,48,.2);padding:8px 16px;border-radius:100px;font-size:.78rem;color:var(--gold);margin-bottom:24px}
-
-/* ===== PROOF STRIP ===== */
-.strip{background:var(--navy-light);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
-.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.strip-item{text-align:center;padding:24px 16px;border-right:1px solid rgba(255,255,255,.06)}
-.strip-item:last-child{border-right:none}
-.strip-item .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--gold);margin-bottom:4px}
-.strip-item .label{font-size:.8rem;color:rgba(255,255,255,.55);font-weight:500}
-
-/* ===== PROBLEM SECTION ===== */
-.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.problem-text h2{margin-bottom:16px}
-.problem-text > p{font-size:1.05rem;margin-bottom:24px;max-width:520px}
-.problem-leaks{display:flex;flex-direction:column;gap:12px}
-.leak-item{display:flex;align-items:flex-start;gap:14px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);transition:box-shadow .2s}
-.leak-item:hover{box-shadow:var(--shadow)}
-.leak-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.8rem}
-.leak-icon.red{background:#fef2f2;color:#ef4444}
-.leak-icon.amber{background:#fffbeb;color:#d97706}
-.leak-icon.blue{background:#eff6ff;color:var(--blue)}
-.leak-icon.slate{background:#f1f5f9;color:var(--text-secondary)}
-.leak-info h4{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:600;font-size:.95rem;color:var(--navy);margin-bottom:2px}
-.leak-info p{font-size:.85rem;color:var(--text-secondary)}
-.problem-impact{background:var(--navy);border-radius:var(--radius);padding:36px;color:#fff}
-.problem-impact h3{font-size:1.1rem;margin-bottom:20px;color:var(--gold)}
-.impact-metrics{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.impact-metric .value{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.6rem;color:#fff;display:block}
-.impact-metric .value span{color:var(--gold)}
-.impact-metric .desc{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:2px}
-
-/* ===== SERVICES SECTION ===== */
-.services-header{margin-bottom:48px}
-.services-header h2{margin-bottom:12px}
-.services-header p{font-size:1.05rem;max-width:600px}
-.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.service-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;transition:all .25s;position:relative}
-.service-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--gold)}
-.service-card:nth-child(5){grid-column:1/-1}
-.service-card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:800;font-size:1rem}
-.service-card-icon.gold{background:rgba(244,196,48,.12);color:var(--gold-dark)}
-.service-card-icon.blue{background:rgba(3,105,161,.1);color:var(--blue)}
-.service-card-icon.navy{background:rgba(15,23,42,.08);color:var(--navy)}
-.service-card h3{font-size:1.1rem;margin-bottom:8px}
-.service-card p{font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:14px}
-.service-card-tags{display:flex;flex-wrap:wrap;gap:6px}
-.service-card-tags span{font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:100px;background:var(--muted);color:var(--text-secondary);font-family:'IBM Plex Mono',monospace;letter-spacing:.04em}
-
-/* ===== PROCESS ===== */
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
-.process-grid::before{content:'';position:absolute;top:40px;left:calc(12.5% + 24px);right:calc(12.5% + 24px);height:2px;background:var(--line);z-index:0}
-.process-step{position:relative;z-index:1;text-align:left}
-.process-step-num{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.6rem;margin-bottom:20px}
-.process-step-num.gold{background:var(--gold);color:var(--navy)}
-.process-step-num.blue{background:var(--blue);color:#fff}
-.process-step-num.navy{background:var(--navy);color:#fff}
-.process-step-num.outline{background:transparent;border:3px solid var(--navy);color:var(--navy)}
-.process-step h4{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:1rem;margin-bottom:6px;color:var(--navy)}
-.process-step p{font-size:.85rem;color:var(--text-secondary);line-height:1.5}
-
-/* ===== PRICING ===== */
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.pricing-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;transition:all .25s;display:flex;flex-direction:column}
-.pricing-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
-.pricing-card.featured{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),var(--shadow-lg)}
-.pricing-card.featured .pricing-badge{display:block}
-.pricing-badge{display:none;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;background:var(--gold);color:var(--navy);padding:4px 12px;border-radius:100px;margin-bottom:12px;width:fit-content}
-.pricing-name{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:1.2rem;color:var(--navy);margin-bottom:4px}
-.pricing-desc{font-size:.85rem;color:var(--text-secondary);margin-bottom:20px}
-.pricing-amount{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:2rem;color:var(--navy);margin-bottom:4px}
-.pricing-amount small{font-size:.9rem;font-weight:500;color:var(--text-secondary);font-family:'Open Sans',Arial,Helvetica,sans-serif}
-.pricing-note{font-size:.8rem;color:var(--text-muted);margin-bottom:20px}
-.pricing-features{flex:1;display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.pricing-features li{font-size:.85rem;color:var(--text-secondary);padding-left:20px;position:relative}
-.pricing-features li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700}
-.pricing-card .btn{margin-top:auto}
-
-/* ===== CASE STUDY ===== */
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.case-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:box-shadow .2s}
-.case-card:hover{box-shadow:var(--shadow-lg)}
-.case-card-header{padding:24px 24px 0;display:flex;align-items:center;justify-content:space-between}
-.case-card-header h3{font-size:1rem}
-.case-badge{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.7rem;padding:4px 10px;border-radius:100px}
-.case-badge.green{background:#dcfce7;color:#16a34a}
-.case-badge.orange{background:#ffedd5;color:#ea580c}
-.case-card-body{padding:20px 24px 24px}
-.case-metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
-.case-metric{background:var(--muted);border-radius:var(--radius-sm);padding:14px;text-align:center}
-.case-metric .change{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.4rem;display:block}
-.case-metric .change.up{color:#16a34a}
-.case-metric .change.down{color:#ef4444}
-.case-metric .clabel{font-size:.75rem;color:var(--text-secondary);margin-top:2px}
-.case-detail{font-size:.85rem;color:var(--text-secondary);line-height:1.6}
-
-/* ===== FAQ ===== */
-.faq-grid{max-width:720px;margin:0 auto}
-.faq-item{border-bottom:1px solid var(--line);padding:20px 0}
-.faq-question{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:600;font-size:1rem;color:var(--navy);padding:4px 0;background:none;border:none;width:100%;text-align:left}
-.faq-question .faq-toggle{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.2rem;color:var(--gold);transition:transform .25s;flex-shrink:0}
-.faq-item.open .faq-toggle{transform:rotate(45deg)}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding:0}
-.faq-item.open .faq-answer{max-height:300px;padding-top:12px}
-.faq-answer p{font-size:.9rem;color:var(--text-secondary);line-height:1.7}
-
-/* ===== CONTACT ===== */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.contact-info h2{margin-bottom:12px;color:#fff}
-.contact-info p{color:rgba(255,255,255,.7);font-size:1rem;margin-bottom:28px}
-.contact-details{display:flex;flex-direction:column;gap:16px}
-.contact-detail{display:flex;align-items:center;gap:14px}
-.contact-detail-icon{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.85rem;color:var(--gold)}
-.contact-detail-text .clabel{font-size:.75rem;color:rgba(255,255,255,.4)}
-.contact-detail-text a{font-weight:600;color:#fff;transition:color .2s}
-.contact-detail-text a:hover{color:var(--gold)}
-.contact-form{background:var(--card);border-radius:var(--radius);padding:36px;border:1px solid var(--line)}
-.contact-form h3{font-size:1.1rem;margin-bottom:20px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
-.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:var(--radius-sm);font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:.9rem;color:var(--text);background:#fff;transition:border-color .2s;outline:none}
-.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--gold)}
-.contact-form textarea{min-height:100px;resize:vertical}
-.contact-form .btn{width:100%;margin-top:8px}
-#formSuccess{display:none;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:var(--radius-sm);padding:14px 18px;margin-top:14px;font-size:.88rem;color:#16a34a;font-weight:600}
-
-/* ===== FOOTER ===== */
-.footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding:40px 0}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
-.footer-brand .logo-text{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:800;font-size:1.2rem;margin-bottom:8px;display:block}
-.footer-brand p{font-size:.85rem;color:rgba(255,255,255,.5);max-width:300px}
-.footer-col h5{font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:.85rem;color:#fff;margin-bottom:14px}
-.footer-col a{display:block;font-size:.84rem;color:rgba(255,255,255,.55);padding:4px 0;transition:color .2s}
-.footer-col a:hover{color:var(--gold)}
-.footer-bottom{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.35)}
-
-/* ===== MOBILE CTA BAR ===== */
-.mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--navy);border-top:1px solid rgba(255,255,255,.1);padding:10px 16px;gap:10px}
-.mobile-cta a{flex:1;text-align:center;padding:12px;border-radius:var(--radius-sm);font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:700;font-size:.85rem}
-.mobile-cta .call{background:rgba(255,255,255,.08);color:#fff}
-.mobile-cta .audit-cta{background:var(--gold);color:var(--navy)}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:1024px){
-  .hero-grid,.problem-grid,.contact-grid{grid-template-columns:1fr}
-  .hero p{max-width:100%}
-  .case-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .process-grid{grid-template-columns:repeat(2,1fr)}
-  .process-grid::before{display:none}
-  .pricing-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
-  .services-grid{grid-template-columns:1fr}
-  .service-card:nth-child(5){grid-column:auto}
-}
-@media(max-width:768px){
-  .nav-links{display:none}
-  .hamb{display:flex}
-  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:16px;gap:4px;border-bottom:1px solid rgba(255,255,255,.08)}
-  .hero{padding:120px 0 60px}
-  .hero-grid{gap:40px}
-  .strip-grid{grid-template-columns:repeat(2,1fr)}
-  .strip-item:nth-child(2){border-right:none}
-  .strip-item{padding:16px}
-  .strip-item .num{font-size:1.2rem}
-  .problem-impact{padding:24px}
-  .impact-metrics{grid-template-columns:1fr}
-  .process-grid{grid-template-columns:1fr;gap:28px}
-  .process-step{display:flex;gap:20px;align-items:flex-start}
-  .process-step-num{width:56px;height:56px;font-size:1.2rem;margin-bottom:0;flex-shrink:0}
-  .form-row{grid-template-columns:1fr}
-  .contact-form{padding:24px}
-  .footer-grid{grid-template-columns:1fr;gap:24px}
-  .footer-bottom{flex-direction:column;text-align:center}
-  .mobile-cta{display:flex}
-  .hero-url{flex-direction:column;gap:8px}
-  .hero-url input{border-radius:var(--radius-sm)}
-  .hero-url .btn{border-radius:var(--radius-sm)}
-  .hero-actions{gap:8px}
-  .hero-actions .btn{flex:1;justify-content:center}
-  .case-metrics{grid-template-columns:1fr 1fr}
-}
-@media(max-width:480px){
-  .strip-grid{grid-template-columns:1fr 1fr}
-  .problem-leaks{gap:8px}
-  .pricing-card{padding:24px}
-  .service-card{padding:24px}
-}
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YellowMarket — AI Agency for Local Business Growth</title>
+  <meta name="description" content="YellowMarket is an AI agency for local businesses and high-value professionals. We rebuild weak websites, improve Google visibility, capture missed leads, and automate follow-up with clear pilot pricing." />
+  <link rel="canonical" href="https://yellowmarket.store/" />
+  <meta property="og:title" content="YellowMarket — AI Agency for Local Business Growth" />
+  <meta property="og:description" content="AI websites, Google visibility, booking flows, and follow-up automations for local businesses. Pilot packages from $299." />
+  <meta property="og:url" content="https://yellowmarket.store/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#111827;
+      --ink-2:#1f2937;
+      --muted:#667085;
+      --paper:#fffaf3;
+      --paper-2:#f7efe2;
+      --card:#ffffff;
+      --line:#eadfce;
+      --teal:#0f766e;
+      --teal-dark:#115e59;
+      --orange:#ea580c;
+      --amber:#f59e0b;
+      --blue:#2563eb;
+      --green:#16a34a;
+      --red:#dc2626;
+      --shadow:0 24px 70px rgba(17,24,39,.12);
+      --radius:28px;
+      --radius-sm:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .mono{font-family:'JetBrains Mono',monospace;letter-spacing:-.02em}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--teal-dark);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(22,163,74,.12)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:14px 20px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--teal);color:#fff;box-shadow:0 14px 35px rgba(15,118,110,.24)}
+    .btn-primary:hover{background:var(--teal-dark)}
+    .btn-secondary{background:#fff;color:var(--ink);border-color:var(--line)}
+    .btn-orange{background:var(--orange);color:#fff;box-shadow:0 14px 35px rgba(234,88,12,.22)}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,250,243,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(234,223,206,.75)}
+    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.04em;font-size:1.12rem}
+    .brand-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--teal),#14b8a6);display:grid;place-items:center;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:900}
+    .nav-links{display:flex;align-items:center;gap:22px;color:var(--muted);font-weight:800;font-size:.92rem}
+    .nav-cta{display:flex;align-items:center;gap:10px}
+    .hero{position:relative;overflow:hidden;padding:82px 0 64px;background:
+      radial-gradient(circle at 12% 10%,rgba(15,118,110,.16),transparent 30%),
+      radial-gradient(circle at 85% 0%,rgba(234,88,12,.12),transparent 28%),
+      linear-gradient(180deg,#fffaf3 0%,#f7efe2 100%)}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(360px,.94fr);gap:54px;align-items:center}
+    h1,h2,h3{margin:0;letter-spacing:-.055em;line-height:1.02}
+    h1{font-family:Calistoga,Georgia,serif;font-size:clamp(3.2rem,7vw,6.9rem);font-weight:400;max-width:780px}
+    h2{font-size:clamp(2.05rem,4.3vw,4.4rem);font-weight:850}
+    h3{font-size:1.25rem;font-weight:850;letter-spacing:-.035em}
+    .hero-copy{font-size:1.18rem;color:var(--ink-2);max-width:680px;margin:24px 0 0}
+    .hero-copy strong{color:var(--teal-dark)}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0 0}
+    .hero-note{margin-top:18px;color:var(--muted);font-size:.95rem;font-weight:650}
+    .hero-note a{color:var(--teal-dark);font-weight:850;text-decoration:underline;text-underline-offset:4px}
+    .operator-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;position:relative}
+    .operator-top{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center;padding:10px}
+    .portrait{width:160px;height:190px;border-radius:24px;object-fit:cover;background:#ddd;box-shadow:0 18px 44px rgba(17,24,39,.16)}
+    .operator-top p{margin:8px 0 0;color:var(--muted);font-weight:650}
+    .audit-panel{margin-top:16px;background:#111827;color:#fff;border-radius:24px;padding:22px;overflow:hidden;position:relative}
+    .audit-panel::after{content:"";position:absolute;inset:auto -50px -70px auto;width:210px;height:210px;border-radius:50%;background:rgba(20,184,166,.18)}
+    .audit-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:18px}
+    .status-pill{font-size:.76rem;font-weight:900;color:#bbf7d0;background:rgba(22,163,74,.16);border:1px solid rgba(187,247,208,.24);border-radius:999px;padding:7px 10px}
+    .leak-list{display:grid;gap:12px;position:relative;z-index:1}
+    .leak{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:12px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.05)}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--red)}
+    .dot.amber{background:var(--amber)}.dot.green{background:var(--green)}
+    .leak strong{display:block}.leak span{display:block;color:rgba(255,255,255,.62);font-size:.84rem}.leak b{font-family:'JetBrains Mono';font-size:.86rem}
+    .proof-strip{background:#111827;color:#fff;padding:24px 0}
+    .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .proof-item{padding:18px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.04)}
+    .proof-item b{display:block;font-size:1.25rem}.proof-item span{color:rgba(255,255,255,.66);font-size:.9rem;font-weight:650}
+    section{padding:86px 0}.section-muted{background:#fff}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:36px}.section-head p{max-width:560px;color:var(--muted);font-size:1.05rem;margin:0;font-weight:650}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}
+    .pain-stack{display:grid;gap:16px}.pain-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 32px rgba(17,24,39,.06)}
+    .pain-card p,.service-card p,.benefit p,.price-card p,.target-card p,.case-card p{color:var(--muted);font-weight:650;margin:10px 0 0}
+    .target-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.target-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:26px}.target-card ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:10px}.target-card li{display:flex;gap:10px;font-weight:750;color:var(--ink-2)}.target-card li::before{content:"→";color:var(--teal);font-weight:900}
+    .services-bento{display:grid;grid-template-columns:1.05fr .95fr;grid-auto-rows:minmax(190px,auto);gap:18px}.service-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 12px 36px rgba(17,24,39,.06)}.service-card.large{grid-row:span 2;background:#102a2a;color:#fff}.service-card.large p{color:rgba(255,255,255,.72)}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-family:'JetBrains Mono';font-size:.72rem;font-weight:800;padding:7px 9px;border-radius:999px;background:#ecfdf5;color:#0f766e}.service-card.large .tag{background:rgba(255,255,255,.1);color:#ccfbf1}.solution-strip{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:0 18px 48px rgba(17,24,39,.08)}.solution-strip h3{font-size:1.65rem}.solution-strip p{max-width:820px}.solution-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}.solution-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:16px}.solution-card b{display:block;color:var(--ink);font-size:.96rem}.solution-card span{display:block;color:var(--muted);font-weight:700;font-size:.86rem;margin-top:7px;line-height:1.35}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.benefit{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:24px}.benefit b{font-family:'JetBrains Mono';color:var(--orange);font-size:.88rem}
+    .cases{display:grid;grid-template-columns:1fr 1fr;gap:18px}.case-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 12px 36px rgba(17,24,39,.06)}.before-after{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.ba{border-radius:18px;padding:16px;background:#f9fafb;border:1px solid var(--line)}.ba b{font-family:'JetBrains Mono';font-size:.78rem;text-transform:uppercase}.ba.before b{color:var(--red)}.ba.after b{color:var(--green)}.ba p{margin:8px 0 0;color:var(--ink-2);font-size:.92rem}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.price-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 12px 36px rgba(17,24,39,.06);position:relative}.price-card.featured{border:2px solid var(--teal);transform:translateY(-10px)}.badge{position:absolute;top:18px;right:18px;background:#ecfdf5;color:var(--teal-dark);border-radius:999px;padding:7px 10px;font-size:.72rem;font-weight:900}.price{font-family:'JetBrains Mono';font-size:2.25rem;font-weight:900;letter-spacing:-.06em;margin:18px 0 6px}.price small{font-size:.86rem;color:var(--muted)}.price-card ul{margin:20px 0 0;padding:0;list-style:none;display:grid;gap:12px}.price-card li{display:flex;gap:10px;color:var(--ink-2);font-weight:700}.price-card li::before{content:"✓";color:var(--green);font-weight:900}
+    .pilot-box{margin-top:22px;padding:20px;border:1px dashed rgba(15,118,110,.35);border-radius:22px;background:#f0fdfa;color:#134e4a;font-weight:750}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:24px}.step-num{font-family:'JetBrains Mono';color:var(--orange);font-weight:900;margin-bottom:18px}
+    .trust{background:#111827;color:#fff;border-radius:34px;padding:42px;display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:center}.trust p{color:rgba(255,255,255,.7);font-weight:650}.trust-list{display:grid;gap:12px}.trust-list div{padding:16px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);font-weight:750}.trust-list span{color:#5eead4;font-family:'JetBrains Mono';margin-right:8px}
+    .cta{background:#0f766e;color:#fff;text-align:center}.cta h2{max-width:900px;margin:auto}.cta p{max-width:720px;margin:20px auto 0;color:rgba(255,255,255,.78);font-size:1.1rem;font-weight:650}.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.cta .btn-secondary{background:#fff;color:#0f766e}
+    footer{padding:34px 0;background:#111827;color:rgba(255,255,255,.72)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-inner b{color:#fff}
+    @media (max-width:900px){.nav-links{display:none}.hero-grid,.split,.trust{grid-template-columns:1fr}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr 1fr}.services-bento,.cases,.target-grid{grid-template-columns:1fr}.price-card.featured{transform:none}.section-head{display:block}.section-head p{margin-top:16px}.hero{padding-top:54px}.operator-top{grid-template-columns:120px 1fr}.portrait{width:120px;height:150px}}
+    @media (max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav-inner{height:68px}.nav-cta .btn-secondary{display:none}h1{font-size:3.15rem}.hero-copy{font-size:1.04rem}.hero-actions .btn{width:100%}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.operator-card{padding:12px}.service-card,.price-card,.case-card,.pain-card,.benefit,.step,.target-card{padding:22px}section{padding:64px 0}.trust{padding:28px;border-radius:26px}.footer-inner{display:grid}}
+    @media (prefers-reduced-motion:reduce){*,html{scroll-behavior:auto!important;transition:none!important;animation:none!important}.btn:hover{transform:none}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"YellowMarket LLC","url":"https://yellowmarket.store/","email":"contact@yellowmarket.store","telephone":"+1-202-773-7868","description":"AI agency for local businesses: websites, Google visibility, booking flows, and follow-up automation.","areaServed":"United States","serviceType":["AI website rebuild","Google Business Profile optimization","Lead follow-up automation","Local SEO","AI receptionist discovery"]}
+  </script>
 </head>
 <body>
-
-<!-- ===== HEADER ===== -->
-<header class="header">
-  <div class="wrap nav">
-    <a class="logo" href="#">
-      <span class="logo-mark">Y</span>
-      <span class="logo-text">Yellow<span>Market</span></span>
-    </a>
-    <nav class="nav-links" id="mainNav" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#process">How It Works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a href="tel:+12027737868" style="color:var(--gold)">(202) 773-7868</a>
-      <a class="nav-cta" href="#contact">Free Audit</a>
-    </nav>
-    <button class="hamb" id="hambBtn" aria-label="Toggle menu">Menu</button>
-  </div>
-</header>
-
-<main>
-
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="hero-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        Same-week audit available
-      </div>
-      <h1>Your business is losing money every time a <strong>lead falls through the cracks.</strong></h1>
-      <p>Most local businesses leak 30–50% of their potential revenue through missed calls, slow follow-up, weak Google presence, and broken booking paths. YellowMarket plugs those leaks — with AI-powered websites, chatbots, and automation that actually work for small businesses.</p>
-      <div class="hero-url">
-        <input type="url" id="heroUrlInput" placeholder="Enter your website URL for a free audit..." aria-label="Your website URL">
-        <button class="btn btn-gold" onclick="document.getElementById('heroUrlInput').value && (window.location.href='mailto:contact@yellowmarket.store?subject=Free%20Revenue%20Leak%20Audit%20%E2%80%94%20'+encodeURIComponent(document.getElementById('heroUrlInput').value)+'&body=Website%20URL%3A%20'+encodeURIComponent(document.getElementById('heroUrlInput').value))">Audit This Site →</button>
-      </div>
-      <div class="hero-contact">
-        <span style="color:rgba(255,255,255,.4);font-size:.85rem">Or call</span>
-        <a class="phone-link" href="tel:+12027737868">(202) 773-7868</a>
-        <a href="mailto:contact@yellowmarket.store">contact@yellowmarket.store</a>
-      </div>
+  <header class="nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="YellowMarket home"><span class="brand-mark">Y</span><span>YellowMarket</span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#offer">Offer</a><a href="#targets">Who we help</a><a href="#proof">Before/After</a><a href="#pricing">Pricing</a><a href="#steps">Steps</a>
+      </nav>
+      <div class="nav-cta"><a class="btn btn-secondary" href="tel:+12027737868">Call</a><a class="btn btn-primary" href="mailto:contact@yellowmarket.store?subject=Free%20YellowMarket%20audit">Free audit</a></div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="hero-card-title">⚡ Common Revenue Leaks</div>
-        <div class="hero-card-item">
-          <span class="hero-card-dot red"></span>
-          <div class="hero-card-text">
-            <div class="label">Missed calls</div>
-            <div class="desc">After-hours &amp; busy-time calls go to voicemail</div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">AI agency for local businesses</span>
+          <h1>Turn missed leads into booked jobs.</h1>
+          <p class="hero-copy"><strong>YellowMarket is an AI agency</strong> that helps local businesses and high-value professionals fix weak websites, slow follow-up, poor Google visibility, and missed calls — with simple pilot packages that pay for themselves if the leaks are real.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:contact@yellowmarket.store?subject=Free%20revenue%20leak%20audit">Get a free leak audit</a>
+            <a class="btn btn-secondary" href="/demos/mz-plumbing-4-you/">See a live before/after demo</a>
           </div>
-          <span class="hero-card-value">-32%</span>
+          <p class="hero-note">Limited pilot packages: <a href="#pricing">$299 / $599 / $999</a>. Clear scope, no long contract, no bloated agency retainer.</p>
         </div>
-        <div class="hero-card-item">
-          <span class="hero-card-dot amber"></span>
-          <div class="hero-card-text">
-            <div class="label">Slow follow-up</div>
-            <div class="desc">Leads wait 4+ hours for a response</div>
-          </div>
-          <span class="hero-card-value">-28%</span>
-        </div>
-        <div class="hero-card-item">
-          <span class="hero-card-dot amber"></span>
-          <div class="hero-card-text">
-            <div class="label">Weak Google presence</div>
-            <div class="desc">Incomplete GBP, missing reviews, no service pages</div>
-          </div>
-          <span class="hero-card-value">-40%</span>
-        </div>
-        <div class="hero-card-item">
-          <span class="hero-card-dot green"></span>
-          <div class="hero-card-text">
-            <div class="label">Fixed with YellowMarket</div>
-            <div class="desc">All leaks addressed in your first month</div>
-          </div>
-          <span class="hero-card-value" style="color:#22c55e">→ Fixed</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROOF STRIP ===== -->
-<section class="strip">
-  <div class="wrap strip-grid">
-    <div class="strip-item">
-      <div class="num">250+</div>
-      <div class="label">Businesses audited</div>
-    </div>
-    <div class="strip-item">
-      <div class="num"><span style="color:#fff">$</span>47k</div>
-      <div class="label">Avg. identified leak value</div>
-    </div>
-    <div class="strip-item">
-      <div class="num">4.9<span style="font-size:.8rem;opacity:.6">/5</span></div>
-      <div class="label">Client satisfaction</div>
-    </div>
-    <div class="strip-item">
-      <div class="num">7<span style="font-size:.8rem;opacity:.6"> days</span></div>
-      <div class="label">Average time to first fix</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE PROBLEM ===== -->
-<section class="section" id="problem">
-  <div class="wrap problem-grid">
-    <div class="problem-text">
-      <span class="tag">The Revenue Leak Problem</span>
-      <h2>Your website and Google presence are working against you — and you're paying for it every month.</h2>
-      <p>Here's what happens to a typical local business lead:</p>
-      <div class="problem-leaks">
-        <div class="leak-item">
-          <div class="leak-icon red">1</div>
-          <div class="leak-info">
-            <h4>A potential customer finds you on Google</h4>
-            <p>Your GBP listing is incomplete, has 3 old reviews, and no service pages rank for what they searched. They move to the next result.</p>
-          </div>
-        </div>
-        <div class="leak-item">
-          <div class="leak-icon amber">2</div>
-          <div class="leak-info">
-            <h4>They call during lunch — it goes to voicemail</h4>
-            <p>80% of callers don't leave a message. That customer never comes back. Your competitor answered on the second ring.</p>
-          </div>
-        </div>
-        <div class="leak-item">
-          <div class="leak-icon blue">3</div>
-          <div class="leak-info">
-            <h4>Someone fills out your contact form</h4>
-            <p>You reply 6 hours later. By then they've booked with someone else. Speed-to-lead is the single biggest predictor of conversion.</p>
-          </div>
-        </div>
-        <div class="leak-item">
-          <div class="leak-icon slate">4</div>
-          <div class="leak-info">
-            <h4>A booked customer doesn't show up</h4>
-            <p>No reminder was sent. No deposit was taken. That slot is empty and you can't fill it on short notice.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="problem-impact">
-      <h3>What This Costs You</h3>
-      <div class="impact-metrics">
-        <div class="impact-metric">
-          <span class="value"><span>$</span>12k<span>–$47k</span></span>
-          <span class="desc">Annual revenue lost to missed calls alone in a typical service business</span>
-        </div>
-        <div class="impact-metric">
-          <span class="value">4<span>×</span></span>
-          <span class="desc">Faster response = higher close rate. Call within 1 min = 391% more conversions.</span>
-        </div>
-        <div class="impact-metric">
-          <span class="value">76%</span>
-          <span class="desc">Of consumers notice incomplete Google profiles — and choose a competitor</span>
-        </div>
-        <div class="impact-metric">
-          <span class="value"><span>$</span>0</span>
-          <span class="desc">Cost to start. Your first audit is free. You only pay for the fixes that show clear ROI.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SERVICES / PRODUCTS ===== -->
-<section class="section section-muted" id="services">
-  <div class="wrap">
-    <div class="services-header">
-      <span class="tag">Products &amp; Services</span>
-      <h2>Five systems. One growth engine for your business.</h2>
-      <p>Every YellowMarket engagement starts with a free audit. Then we build the right combination of these five products to close your specific revenue leaks.</p>
-    </div>
-    <div class="services-grid">
-      <!-- Product 1 -->
-      <article class="service-card">
-        <div class="service-card-icon gold">AI</div>
-        <h3>AI Websites</h3>
-        <p>Conversion-optimized websites built for local search. Schema markup tells Google exactly what you do and where. Mobile-first, fast-loading, and structured to turn visitors into calls and bookings — not bounces.</p>
-        <div class="service-card-tags">
-          <span>Schema markup</span>
-          <span>Mobile-first</span>
-          <span>Fast loading</span>
-          <span>SEO structure</span>
-        </div>
-      </article>
-      <!-- Product 2 -->
-      <article class="service-card">
-        <div class="service-card-icon blue">AI</div>
-        <h3>AI Chatbot &amp; Voice Agent</h3>
-        <p>A 24/7 receptionist that answers calls, qualifies leads, books appointments, and handles common questions — in natural language. Never miss another after-hours call. Never put a lead on hold again.</p>
-        <div class="service-card-tags">
-          <span>24/7 answering</span>
-          <span>Lead qualification</span>
-          <span>Appointment booking</span>
-          <span>Multi-language</span>
-        </div>
-      </article>
-      <!-- Product 3 -->
-      <article class="service-card">
-        <div class="service-card-icon navy">AI</div>
-        <h3>Lead Automation</h3>
-        <p>Missed-call text-back within seconds. Automated follow-up sequences that nurture leads until they book. CRM sync so you never lose a name or number. Speed-to-lead drops from hours to seconds.</p>
-        <div class="service-card-tags">
-          <span>Missed-call text-back</span>
-          <span>Auto follow-up</span>
-          <span>CRM integration</span>
-          <span>SMS campaigns</span>
-        </div>
-      </article>
-      <!-- Product 4 -->
-      <article class="service-card">
-        <div class="service-card-icon gold">AI</div>
-        <h3>Google Visibility</h3>
-        <p>Complete Google Business Profile optimization. Service-area page creation that ranks for local searches. Review generation system that builds trust automatically. Local SEO that puts you ahead of competitors.</p>
-        <div class="service-card-tags">
-          <span>GBP optimization</span>
-          <span>Local SEO</span>
-          <span>Review generation</span>
-          <span>Service pages</span>
-        </div>
-      </article>
-      <!-- Product 5 -->
-      <article class="service-card">
-        <div class="service-card-icon blue">AI</div>
-        <h3>Growth Content</h3>
-        <p>Weekly service pages, blog posts, and location pages written and published for you. Each piece is AI-optimized to rank for the search terms your actual customers use. Fresh content that Google rewards and customers find.</p>
-        <div class="service-card-tags">
-          <span>Weekly content</span>
-          <span>Service pages</span>
-          <span>Blog posts</span>
-          <span>Location pages</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== HOW IT WORKS ===== -->
-<section class="section" id="process">
-  <div class="wrap">
-    <div style="max-width:600px;margin-bottom:48px">
-      <span class="tag">How It Works</span>
-      <h2>From audit to revenue in four steps.</h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="process-step-num gold">01</div>
-        <h4>Free Audit</h4>
-        <p>You send your website URL. We review your site, Google presence, booking path, calls-to-action, reviews, and speed-to-lead. You get a ranked list of revenue leaks with estimated impact.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step-num blue">02</div>
-        <h4>Leak Map</h4>
-        <p>We show you exactly what's losing money, what to fix first, and what each fix is projected to recover. No upsells. No surprises. Just clear priorities.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step-num navy">03</div>
-        <h4>Build &amp; Deploy</h4>
-        <p>We build the agreed-upon systems — website improvements, chatbot, automation, SEO, content — and launch them in sequence. Most fixes go live within 7 days.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step-num outline">04</div>
-        <h4>Monitor &amp; Optimize</h4>
-        <p>We track what's working and what isn't. Monthly performance reports show calls answered, leads captured, bookings made, and revenue recovered. We adjust as needed.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PRICING ===== -->
-<section class="section section-muted" id="pricing">
-  <div class="wrap">
-    <div style="max-width:600px;margin-bottom:48px">
-      <span class="tag">Pricing</span>
-      <h2>Transparent ranges. No hidden fees.</h2>
-      <p>Every project starts with a free audit. Pricing depends on the scope of leaks found. Here's what our clients typically invest.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <div class="pricing-name">Essential</div>
-        <div class="pricing-desc">For businesses that need the basics fixed fast.</div>
-        <div class="pricing-amount">$1,500 <small>– $3,500</small></div>
-        <div class="pricing-note">One-time setup + $0/mo or $149/mo maintenance</div>
-        <ul class="pricing-features">
-          <li>Revenue leak audit &amp; report</li>
-          <li>Website conversion improvements</li>
-          <li>GBP optimization &amp; review setup</li>
-          <li>Speed-to-lead automation</li>
-          <li>1 month of monitoring</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact">Start Free Audit</a>
-      </div>
-      <div class="pricing-card featured">
-        <span class="pricing-badge">Most common</span>
-        <div class="pricing-name">Growth</div>
-        <div class="pricing-desc">Full leak coverage with ongoing optimization.</div>
-        <div class="pricing-amount">$3,500 <small>– $7,500</small></div>
-        <div class="pricing-note">One-time setup + $349/mo maintenance</div>
-        <ul class="pricing-features">
-          <li>Everything in Essential</li>
-          <li>AI website build or redesign</li>
-          <li>AI chatbot + voice agent setup</li>
-          <li>Lead automation + CRM integration</li>
-          <li>Monthly content (4 service pages)</li>
-          <li>Monthly performance reports</li>
-        </ul>
-        <a class="btn btn-gold" href="#contact">Start Free Audit</a>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-name">Scale</div>
-        <div class="pricing-desc">For multi-location or high-volume operations.</div>
-        <div class="pricing-amount">$7,500 <small>– $15,000</small></div>
-        <div class="pricing-note">One-time setup + $699/mo maintenance</div>
-        <ul class="pricing-features">
-          <li>Everything in Growth</li>
-          <li>Multi-location SEO &amp; GBP</li>
-          <li>Custom AI voice agent (industry-trained)</li>
-          <li>Advanced analytics &amp; attribution</li>
-          <li>Weekly content production</li>
-          <li>Priority support &amp; dedicated account manager</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact">Start Free Audit</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CASE STUDIES / CLIENT EXAMPLES ===== -->
-<section class="section" id="cases">
-  <div class="wrap">
-    <div style="max-width:600px;margin-bottom:48px">
-      <span class="tag">Client Results</span>
-      <h2>Real before &amp; after. Real numbers.</h2>
-      <p>Here's what happened when businesses like yours closed their revenue leaks with YellowMarket.</p>
-    </div>
-    <div class="case-grid">
-      <div class="case-card">
-        <div class="case-card-header">
-          <h3>Home Service Company — Dallas, TX</h3>
-          <span class="case-badge green">+127% calls</span>
-        </div>
-        <div class="case-card-body">
-          <div class="case-metrics">
-            <div class="case-metric">
-              <span class="change up">+127%</span>
-              <span class="clabel">Incoming calls</span>
-            </div>
-            <div class="case-metric">
-              <span class="change up">+84%</span>
-              <span class="clabel">Booking rate</span>
-            </div>
-            <div class="case-metric">
-              <span class="change down" style="color:#16a34a">-94%</span>
-              <span class="clabel">Missed calls</span>
-            </div>
-            <div class="case-metric">
-              <span class="change up">+210%</span>
-              <span class="clabel">Google Views</span>
+        <aside class="operator-card" aria-label="YellowMarket trust card">
+          <div class="operator-top">
+            <img class="portrait" src="/assets/founder-operator-hero.webp" alt="YellowMarket founder/operator portrait" loading="eager" width="1100" height="1320" />
+            <div>
+              <h3>Direct founder-style delivery.</h3>
+              <p>You deal with one operator who audits, builds, ships, and explains what changed. No agency maze.</p>
             </div>
           </div>
-          <p class="case-detail"><strong>Before:</strong> Outdated website, 4 Google reviews, no booking system, calls went to voicemail after 5pm. <strong>After:</strong> New AI-powered site, chatbot handling after-hours calls, GBP optimized with 28 new reviews, automated follow-up. Results within 6 weeks.</p>
-        </div>
-      </div>
-      <div class="case-card">
-        <div class="case-card-header">
-          <h3>Medical Practice — Phoenix, AZ</h3>
-          <span class="case-badge orange">+63% consults</span>
-        </div>
-        <div class="case-card-body">
-          <div class="case-metrics">
-            <div class="case-metric">
-              <span class="change up">+63%</span>
-              <span class="clabel">Consultations booked</span>
-            </div>
-            <div class="case-metric">
-              <span class="change up">+41%</span>
-              <span class="clabel">Show rate</span>
-            </div>
-            <div class="case-metric">
-              <span class="change down" style="color:#16a34a">-72%</span>
-              <span class="clabel">No-shows</span>
-            </div>
-            <div class="case-metric">
-              <span class="change up">+2.8<span style="font-size:.8rem">×</span></span>
-              <span class="clabel">Lead response speed</span>
+          <div class="audit-panel">
+            <div class="audit-head"><strong>Revenue leak audit</strong><span class="status-pill">Same-week available</span></div>
+            <div class="leak-list">
+              <div class="leak"><span class="dot"></span><div><strong>Missed calls</strong><span>After-hours leads go to voicemail.</span></div><b>Fix first</b></div>
+              <div class="leak"><span class="dot amber"></span><div><strong>Slow follow-up</strong><span>Prospects wait hours, competitors answer now.</span></div><b>Automate</b></div>
+              <div class="leak"><span class="dot green"></span><div><strong>Google trust</strong><span>Reviews, service pages, schema, local intent.</span></div><b>Grow</b></div>
             </div>
           </div>
-          <p class="case-detail"><strong>Before:</strong> Manual scheduling, 8-hour response time, 38% no-show rate, no patient reminders. <strong>After:</strong> AI booking assistant, SMS reminders, automated intake forms, real-time schedule sync. Results within 4 weeks.</p>
-        </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="proof-strip">
+      <div class="wrap proof-grid">
+        <div class="proof-item"><b>Website → calls</b><span>Mobile-first pages built to convert, not decorate.</span></div>
+        <div class="proof-item"><b>Google → trust</b><span>GBP, reviews, services, local SEO structure.</span></div>
+        <div class="proof-item"><b>AI → follow-up</b><span>Text-back, booking, intake, reminders, routing.</span></div>
+        <div class="proof-item"><b>Proof → clarity</b><span>You see the audit, scope, and deliverables before committing.</span></div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ===== FAQ ===== -->
-<section class="section section-muted" id="faq">
-  <div class="wrap">
-    <div style="text-align:center;margin-bottom:40px">
-      <span class="tag">FAQ</span>
-      <h2>Common questions from business owners.</h2>
-    </div>
-    <div class="faq-grid">
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          How fast can you get results?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Most clients see measurable improvements within 7–14 days of launch. Simple fixes — like a missed-call text-back or GBP optimization — can start recovering leads within 48 hours. The full system is typically live within 3–4 weeks from the audit.</p>
+    <section id="targets" class="section-muted">
+      <div class="wrap section-head">
+        <div><span class="eyebrow">who we help</span><h2>Two client types. Same problem: leads are leaking.</h2></div>
+        <p>The offer stays general enough for YellowMarket, but the pain is specific enough for each business owner to recognize themselves in five seconds.</p>
+      </div>
+      <div class="wrap target-grid">
+        <article class="target-card"><h3>Local businesses</h3><p>Trades, restaurants, barbers, salons, cleaners, auto repair, clinics, home services.</p><ul><li>Customers call during busy hours</li><li>Google profile looks unfinished</li><li>Old website does not create trust</li><li>Reviews are not used in the sales path</li></ul></article>
+        <article class="target-card"><h3>High-value professionals</h3><p>Real estate teams, law firms, consultants, recruiters, clinics, finance advisors, and service businesses where one missed opportunity can be worth thousands.</p><ul><li>Speed decides who wins the client</li><li>Intake and qualification are too manual</li><li>Important follow-ups happen too late</li><li>Expertise is trapped in messy documents and inboxes</li></ul></article>
+      </div>
+    </section>
+
+    <section id="offer">
+      <div class="wrap section-head">
+        <div><span class="eyebrow">clear offer</span><h2>One simple growth system, not twelve confusing services.</h2></div>
+        <p>We sell outcomes first: get more qualified leads, book more of them, and stop losing the ones you already paid to attract.</p>
+      </div>
+      <div class="wrap services-bento">
+        <article class="service-card large"><h3>AI Website + Local Trust System</h3><p>A fast, mobile-first site that explains what you do, proves why customers should trust you, and makes the next action obvious: call, book, request an estimate, or start intake.</p><div class="tags"><span class="tag">mobile-first</span><span class="tag">click-to-call</span><span class="tag">service pages</span><span class="tag">schema</span></div></article>
+        <article class="service-card"><h3>Google visibility</h3><p>Google Business Profile cleanup, review capture flow, local pages, and service-area structure so customers find you before competitors.</p><div class="tags"><span class="tag">GBP</span><span class="tag">reviews</span><span class="tag">local SEO</span></div></article>
+        <article class="service-card"><h3>Lead follow-up automation</h3><p>Missed-call text-back, instant estimate forms, booking reminders, and simple CRM handoff so leads do not disappear.</p><div class="tags"><span class="tag">SMS</span><span class="tag">booking</span><span class="tag">intake</span></div></article>
+      </div>
+      <div class="wrap solution-strip">
+        <span class="eyebrow">high-value AI examples</span>
+        <h3>When one delay can cost a deal, automate the critical move.</h3>
+        <p>These are high-leverage AI workflows built around expensive moments: speed, qualification, quoting, intake, calls, and hiring. The goal is not generic automation — it is a custom system that protects revenue and gives the team an unfair response advantage.</p>
+        <div class="solution-grid">
+          <div class="solution-card"><b>First-to-know alerts</b><span>For real estate and deal-driven teams: spot matching opportunities, notify the right lead, and trigger follow-up before competitors move.</span></div>
+          <div class="solution-card"><b>Quote from the field</b><span>For contractors and service pros: turn a voice note, WhatsApp message, or site photo into a clean quote while the client is still warm.</span></div>
+          <div class="solution-card"><b>Client intake engine</b><span>For law, clinics, and advisory firms: collect facts, prepare documents, track stages, and keep every client moving without inbox chaos.</span></div>
+          <div class="solution-card"><b>After-hours front desk</b><span>Answer calls when the team is busy, book what can be booked, summarize context, and escalate urgent work by clear rules.</span></div>
+          <div class="solution-card"><b>Talent radar</b><span>For hiring teams: translate a role into search criteria, rank stronger candidates, and prepare outreach without manual profile digging.</span></div>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          How much does it cost?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>The audit is always free. Implementation ranges from $1,500 to $15,000 depending on how many leaks need fixing. Monthly maintenance starts at $149. We'll show you the exact scope and cost before you commit to anything.</p>
+    </section>
+
+    <section class="section-muted">
+      <div class="wrap section-head"><div><span class="eyebrow">benefits</span><h2>At least five reasons this is a no-brainer when leaks exist.</h2></div><p>The pitch is not “AI is cool”. The pitch is “your current system drops money, and we fix the drop-off points first.”</p></div>
+      <div class="wrap benefits">
+        <article class="benefit"><b>01</b><h3>More revenue from existing demand</h3><p>Capture calls, searches, and form leads you already receive instead of buying more traffic first.</p></article>
+        <article class="benefit"><b>02</b><h3>Faster response</h3><p>Customers get a reply in seconds, not hours. Speed-to-lead is often the cheapest conversion gain.</p></article>
+        <article class="benefit"><b>03</b><h3>Higher trust before the call</h3><p>Use real reviews, service pages, photos, and clear positioning so the prospect feels safer choosing you.</p></article>
+        <article class="benefit"><b>04</b><h3>Less admin work</h3><p>FAQ, appointment reminders, intake questions, and estimate requests can be routed automatically.</p></article>
+        <article class="benefit"><b>05</b><h3>Clear, low-risk pilot</h3><p>Start with a fixed-price package, see the work, then decide if maintenance or automation is worth it.</p></article>
+        <article class="benefit"><b>06</b><h3>Assets you keep</h3><p>The website, pages, copy, and audit are tangible business assets — not vague consulting hours.</p></article>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="wrap section-head"><div><span class="eyebrow">before / after</span><h2>See the kind of gap we fix.</h2></div><p>Before you buy anything, you should be able to see what is weak, what should change, and why the first fix is worth doing.</p></div>
+      <div class="wrap cases">
+        <article class="case-card"><h3>Example: trade business refresh</h3><p>A typical local service business often has good work in the real world, but the website does not make that trust obvious enough online.</p><div class="before-after"><div class="ba before"><b>Before</b><p>Old site signal, unclear service area, reviews underused, weak estimate path.</p></div><div class="ba after"><b>After</b><p>Clear call CTA, service structure, trust signals, estimate request, local positioning.</p></div></div><div class="hero-actions"><a class="btn btn-secondary" href="/demos/mz-plumbing-4-you/">View example demo</a></div></article>
+        <article class="case-card"><h3>Trust without pressure</h3><p>The first step is a free leak audit. If we cannot point to clear missed calls, weak Google trust, slow follow-up, or a broken booking path, we will not push you into a package.</p><div class="pilot-box">Simple promise: clear audit first → fixed-price scope second → only build what has obvious upside.</div></article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-muted">
+      <div class="wrap section-head"><div><span class="eyebrow">pilot pricing</span><h2>Simple prices. Clear scope. Fair upside for both sides.</h2></div><p>You get a fixed price before work starts, a concrete deliverable, and an optional maintenance path only if it makes sense after launch.</p></div>
+      <div class="wrap pricing">
+        <article class="price-card"><h3>Starter</h3><p>For a business that needs a cleaner, mobile-first site fast.</p><div class="price">$299 <small>one-time</small></div><ul><li>Website refresh / landing page</li><li>Mobile-first layout</li><li>Click-to-call + contact route</li><li>Basic SEO structure</li><li>One light revision</li></ul></article>
+        <article class="price-card featured"><span class="badge">Best first win</span><h3>Growth</h3><p>For most local businesses: better trust, Google, reviews, and service-area clarity.</p><div class="price">$599 <small>one-time</small></div><ul><li>Everything in Starter</li><li>Google Business Profile cleanup checklist</li><li>3–5 service sections/pages</li><li>Reviews / trust signals integrated</li><li>Mini before/after report</li></ul></article>
+        <article class="price-card"><h3>Automation</h3><p>For businesses ready to stop losing leads after the website is fixed.</p><div class="price">$999 <small>one-time</small></div><ul><li>Everything in Growth</li><li>Analytics / tracking setup</li><li>Review capture flow</li><li>Lead follow-up setup</li><li>First month support included</li></ul></article>
+      </div>
+      <div class="wrap pilot-box">Optional maintenance after launch: $50–$150/mo for hosting, updates, reporting, and minor changes. AI receptionist is an upsell only when call volume justifies it.</div>
+    </section>
+
+    <section id="steps">
+      <div class="wrap section-head"><div><span class="eyebrow">how it works</span><h2>Four steps from leak audit to live improvement.</h2></div><p>No confusing discovery project. We identify the biggest revenue leak, fix the highest-leverage asset first, then add automation only when it clearly helps.</p></div>
+      <div class="wrap steps">
+        <article class="step"><div class="step-num">01</div><h3>Send your website</h3><p>You share your current site, Google profile, or booking path. We look for obvious lost-lead points.</p></article>
+        <article class="step"><div class="step-num">02</div><h3>Get the leak map</h3><p>You receive a short, practical audit: what is hurting trust, calls, bookings, and follow-up.</p></article>
+        <article class="step"><div class="step-num">03</div><h3>Pick one package</h3><p>Choose Starter, Growth, or Automation depending on what needs fixing first. No forced retainer.</p></article>
+        <article class="step"><div class="step-num">04</div><h3>Launch and improve</h3><p>We ship the agreed work, check the basics, then decide if maintenance or automation is worth adding.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap trust">
+        <div><span class="eyebrow">why it works</span><h2>Your website should make the next customer easier to win.</h2><p>Most local businesses do not need a huge marketing stack first. They need a clearer offer, faster response, stronger Google trust, and a booking path customers can use without friction.</p></div>
+        <div class="trust-list">
+          <div><span>01</span>Make the business easier to understand in five seconds.</div>
+          <div><span>02</span>Make calling, booking, or requesting an estimate obvious.</div>
+          <div><span>03</span>Use services, reviews, and local proof where customers look.</div>
+          <div><span>04</span>Reply faster when a lead comes in.</div>
+          <div><span>05</span>Keep the first project fixed-price and easy to approve.</div>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What exactly do I get?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>You get a working system that captures, responds to, and converts leads automatically. Depending on your audit results, that could include an AI-optimized website, a chatbot that answers calls and books appointments, automated follow-up sequences, Google Business Profile that ranks, and weekly content that drives traffic. Everything is measurable and reported monthly.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Can I cancel anytime?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. There are no long-term contracts. Monthly maintenance can be paused or cancelled with 30 days' notice. The systems we build are yours — you keep the website, the automation flows, and everything else we set up, even if you choose to manage them yourself.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Do you work with any type of business?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We specialize in local service businesses and high-value professionals — home services, medical/dental practices, legal firms, real estate, salons, auto repair, and similar. If you depend on local customers finding you on Google and calling or booking online, we can help.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="section section-dark" id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-info">
-      <span class="tag-gold tag">Get Started</span>
-      <h2>Find out what your business is leaving on the table.</h2>
-      <p>Send us your website URL or call. We'll reply within 24 hours with a clear, honest audit of your biggest revenue leaks — and what to do about them.</p>
-      <div class="contact-details">
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📞</div>
-          <div class="contact-detail-text">
-            <div class="clabel">Phone</div>
-            <a href="tel:+12027737868">(202) 773-7868</a>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">✉</div>
-          <div class="contact-detail-text">
-            <div class="clabel">Email</div>
-            <a href="mailto:contact@yellowmarket.store">contact@yellowmarket.store</a>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">◆</div>
-          <div class="contact-detail-text">
-            <div class="clabel">Entity</div>
-            <span style="color:rgba(255,255,255,.7);font-size:.9rem">YellowMarket LLC — Wyoming</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <form class="contact-form" id="contactForm" onsubmit="handleForm(event)">
-      <h3>Request Your Free Audit</h3>
-      <div class="form-row">
-        <input id="name" name="name" placeholder="Your name" required>
-        <input id="business" name="business" placeholder="Business name">
-      </div>
-      <div class="form-row">
-        <input id="email" name="email" type="email" placeholder="Email" required>
-        <input id="phone" name="phone" type="tel" placeholder="Phone" required>
-      </div>
-      <select id="service" name="service" style="margin-bottom:14px">
-        <option value="">What brings you in? (optional)</option>
-        <option value="Free revenue leak audit">Free revenue leak audit</option>
-        <option value="AI website">AI website / redesign</option>
-        <option value="AI chatbot or voice agent">AI chatbot or voice agent</option>
-        <option value="Lead automation">Lead automation / missed-call text-back</option>
-        <option value="Google visibility / SEO">Google visibility / local SEO</option>
-        <option value="Growth content">Growth content / service pages</option>
-        <option value="Not sure yet — need advice">Not sure yet — need advice</option>
-      </select>
-      <textarea id="message" name="message" placeholder="Your website URL + anything you'd like us to know..." style="margin-bottom:14px"></textarea>
-      <button class="btn btn-gold" type="submit">Send Audit Request →</button>
-      <div id="formSuccess">✓ Thanks! An email draft has been opened. Send it to contact@yellowmarket.store and we'll get back to you within 24 hours.</div>
-    </form>
-  </div>
-</section>
+    <section class="cta">
+      <div class="wrap"><h2>Send your website. Get the leak map. Fix only what has ROI.</h2><p>If we cannot point to clear lost calls, lost bookings, weak Google trust, or follow-up gaps, you should not buy a package. If we can, the first fix is obvious.</p><div class="cta-actions"><a class="btn btn-secondary" href="mailto:contact@yellowmarket.store?subject=Free%20YellowMarket%20audit">Request free audit</a><a class="btn btn-orange" href="tel:+12027737868">Call (202) 773-7868</a></div></div>
+    </section>
+  </main>
 
-</main>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="logo-text">Yellow<span>Market</span></span>
-        <p>AI growth systems for local businesses and high-value professionals. We turn visitors into calls, calls into bookings, and bookings into revenue.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <a href="#services">AI Websites</a>
-        <a href="#services">AI Chatbot &amp; Voice</a>
-        <a href="#services">Lead Automation</a>
-        <a href="#services">Google Visibility</a>
-        <a href="#services">Growth Content</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="tel:+12027737868">(202) 773-7868</a>
-        <a href="mailto:contact@yellowmarket.store">contact@yellowmarket.store</a>
-        <a href="#contact">Free Audit</a>
-        <a href="#faq">FAQ</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 YellowMarket LLC. All rights reserved.</p>
-      <p>Wyoming, USA</p>
-    </div>
-  </div>
-</footer>
-
-<!-- ===== MOBILE CTA ===== -->
-<div class="mobile-cta">
-  <a class="call" href="tel:+12027737868">Call (202) 773-7868</a>
-  <a class="audit-cta" href="#contact">Free Audit</a>
-</div>
-
-<script>
-// FAQ Toggle
-function toggleFaq(btn) {
-  var item = btn.parentElement;
-  var isOpen = item.classList.contains('open');
-  // Close all
-  document.querySelectorAll('.faq-item.open').forEach(function(el) {
-    el.classList.remove('open');
-  });
-  // Toggle
-  if (!isOpen) item.classList.add('open');
-}
-
-// Mobile menu
-document.getElementById('hambBtn').addEventListener('click', function() {
-  document.getElementById('mainNav').classList.toggle('open');
-});
-
-// Close mobile nav on link click
-document.querySelectorAll('.nav-links a').forEach(function(link) {
-  link.addEventListener('click', function() {
-    document.getElementById('mainNav').classList.remove('open');
-  });
-});
-
-// Contact form handler
-function handleForm(e) {
-  e.preventDefault();
-  var name = document.getElementById('name').value.trim();
-  var business = document.getElementById('business').value.trim();
-  var email = document.getElementById('email').value.trim();
-  var phone = document.getElementById('phone').value.trim();
-  var service = document.getElementById('service').value;
-  var message = document.getElementById('message').value.trim();
-
-  if (!name || !email || !phone) {
-    alert('Please fill in your name, email, and phone.');
-    return;
-  }
-
-  var body = [
-    'Free Revenue Leak Audit Request',
-    '',
-    'Name: ' + name,
-    'Business: ' + (business || '—'),
-    'Email: ' + email,
-    'Phone: ' + phone,
-    'Service interest: ' + (service || '—'),
-    '',
-    'Message:',
-    message || '—'
-  ].join('\n');
-
-  window.location.href = 'mailto:contact@yellowmarket.store?subject='
-    + encodeURIComponent('Free Revenue Leak Audit — ' + (business || name))
-    + '&body=' + encodeURIComponent(body);
-
-  document.getElementById('formSuccess').style.display = 'block';
-}
-</script>
-
+  <footer><div class="wrap footer-inner"><div><b>YellowMarket LLC</b> — AI agency for local business growth.</div><div><a href="mailto:contact@yellowmarket.store">contact@yellowmarket.store</a> · <a href="tel:+12027737868">(202) 773-7868</a></div></div></footer>
 </body>
-<!-- deploy-version: v3-20260703 -->
 </html>
