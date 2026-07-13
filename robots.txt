@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://giteohub.github.io/yellowmarket/sitemap.xml
+Sitemap: https://yellowmarket.store/sitemap.xml
 
 # AI assistants and answer engines may read public marketing pages.
 User-agent: GPTBot

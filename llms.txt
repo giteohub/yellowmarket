@@ -3,7 +3,7 @@
 > YellowMarket builds AI growth systems for local businesses and high-value professionals: AI-powered websites, AI chatbots and voice agents, lead automation, Google visibility, and growth content.
 
 ## Primary URL
-- https://giteohub.github.io/yellowmarket/
+- https://yellowmarket.store/
 
 ## Contact
 - Email: contact@yellowmarket.store
@@ -24,6 +24,6 @@
 4. Monitor calls, leads, bookings, and recovered revenue.
 
 ## Useful pages
-- Homepage: https://giteohub.github.io/yellowmarket/
-- Example client site: https://giteohub.github.io/yellowmarket/demos/client-demo/
-- Trade business demo: https://giteohub.github.io/yellowmarket/demos/mz-plumbing-4-you/
+- Homepage: https://yellowmarket.store/
+- Example client site: https://yellowmarket.store/demos/client-demo/
+- Trade business demo: https://yellowmarket.store/demos/mz-plumbing-4-you/
