@@ -1,0 +1,31 @@
+{
+  "name": "YellowMarket LLC",
+  "url": "https://yellowmarket.store/",
+  "description": "AI agency for local businesses: websites, Google visibility, booking flows, and follow-up automation.",
+  "email": "contact@yellowmarket.store",
+  "telephone": "+1-202-773-7868",
+  "areaServed": "United States",
+  "services": [
+    "AI website design and rebuild",
+    "Google Business Profile optimization",
+    "AI lead follow-up automation",
+    "AI websites and local SEO for plumbers",
+    "AI websites and local SEO for roofers",
+    "AI websites and local SEO for HVAC companies"
+  ],
+  "sameAs": [],
+  "offers": [
+    {
+      "name": "Starter",
+      "price": "299 USD"
+    },
+    {
+      "name": "Pro",
+      "price": "599 USD"
+    },
+    {
+      "name": "Premium",
+      "price": "999 USD"
+    }
+  ]
+}

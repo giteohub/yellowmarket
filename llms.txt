@@ -26,3 +26,13 @@
 - Homepage: https://yellowmarket.store/
 - Premium system showroom: https://yellowmarket.store/showroom/
 - Trade business demo: https://yellowmarket.store/demos/mz-plumbing-4-you/
+
+## Indexable service pages
+- https://yellowmarket.store/services/ai-website-design/ — AI website design and rebuild
+- https://yellowmarket.store/services/google-business-profile-optimization/ — Google Business Profile optimization
+- https://yellowmarket.store/services/ai-lead-follow-up/ — AI lead follow-up automation
+- https://yellowmarket.store/industries/plumbers/ — AI websites and local SEO for plumbers
+- https://yellowmarket.store/industries/roofers/ — AI websites and local SEO for roofers
+- https://yellowmarket.store/industries/hvac/ — AI websites and local SEO for HVAC companies
+- https://yellowmarket.store/business.json — structured business profile
+- https://yellowmarket.store/openai.json — AI crawler profile

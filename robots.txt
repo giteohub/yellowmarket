@@ -12,3 +12,5 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: Google-Extended
 Allow: /
+Allow: /business.json
+Allow: /openai.json
