@@ -108,9 +108,9 @@
     .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:24px}.step-num{font-family:'JetBrains Mono';color:var(--orange);font-weight:900;margin-bottom:18px}
     .trust{background:#111827;color:#fff;border-radius:34px;padding:42px;display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:center}.trust p{color:rgba(255,255,255,.7);font-weight:650}.trust-list{display:grid;gap:12px}.trust-list div{padding:16px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);font-weight:750}.trust-list span{color:#5eead4;font-family:'JetBrains Mono';margin-right:8px}
     .cta{background:#0f766e;color:#fff;text-align:center}.cta h2{max-width:900px;margin:auto}.cta p{max-width:720px;margin:20px auto 0;color:rgba(255,255,255,.78);font-size:1.1rem;font-weight:650}.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.cta .btn-secondary{background:#fff;color:#0f766e}
-    footer{padding:34px 0;background:#111827;color:rgba(255,255,255,.72)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-inner b{color:#fff}
+    footer{padding:34px 0;background:#111827;color:rgba(255,255,255,.72)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-inner b{color:#fff}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr;gap:20px}.footer-grid b{color:#fff}
     @media (max-width:900px){.nav-inner{gap:10px}.nav-links{order:3;width:100%;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:8px 0 2px}.nav-links a{text-align:center;padding:9px 5px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-size:.78rem}.hero-grid,.split,.trust,.showroom-bridge,.sample-map{grid-template-columns:1fr}.proof-grid,.benefits,.pricing,.steps,.solution-grid{grid-template-columns:1fr 1fr}.services-bento,.cases,.target-grid{grid-template-columns:1fr}.price-card.featured{transform:none}.section-head{display:block}.section-head p{margin-top:16px}.hero{padding-top:40px}.operator-top{grid-template-columns:120px 1fr}.portrait{width:120px;height:150px}}
-    @media (max-width:560px){body{overflow-x:hidden}.wrap{width:min(var(--max),calc(100% - 20px))}.nav-inner{min-height:68px}.nav-links{gap:3px}.nav-links a{font-size:.66rem;padding:8px 2px}.nav-cta{display:none}h1{font-size:2.65rem;max-width:100%;overflow-wrap:break-word}.hero-copy,.hero-note{font-size:1rem;max-width:100%;overflow-wrap:break-word}.hero-actions .btn,.showroom-actions .btn{width:100%}.proof-grid,.benefits,.pricing,.steps,.solution-grid,.sample-checks{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.operator-card{padding:14px;overflow:hidden}.operator-top{grid-template-columns:1fr;gap:16px;padding:8px}.portrait{width:112px;height:132px}.operator-top h3{font-size:1.35rem;max-width:100%;overflow-wrap:break-word}.operator-top p{font-size:.92rem;max-width:100%;overflow-wrap:break-word}.operator-proof{display:grid;grid-template-columns:1fr;align-items:start}.operator-proof span{width:max-content;max-width:100%;font-size:.66rem;padding:6px 8px}.audit-head{flex-wrap:wrap}.leak{grid-template-columns:auto 1fr}.leak b{grid-column:2}.service-card,.price-card,.case-card,.pain-card,.benefit,.step,.target-card,.showroom-bridge{padding:22px}.sample-map{padding:20px}section{padding:64px 0}.trust{padding:28px;border-radius:26px}.footer-inner{display:grid}}
+    @media (max-width:560px){body{overflow-x:hidden}.wrap{width:min(var(--max),calc(100% - 20px))}.nav-inner{min-height:68px}.nav-links{gap:3px}.nav-links a{font-size:.66rem;padding:8px 2px}.nav-cta{display:none}h1{font-size:2.65rem;max-width:100%;overflow-wrap:break-word}.hero-copy,.hero-note{font-size:1rem;max-width:100%;overflow-wrap:break-word}.hero-actions .btn,.showroom-actions .btn{width:100%}.proof-grid,.benefits,.pricing,.steps,.solution-grid,.sample-checks{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.operator-card{padding:14px;overflow:hidden}.operator-top{grid-template-columns:1fr;gap:16px;padding:8px}.portrait{width:112px;height:132px}.operator-top h3{font-size:1.35rem;max-width:100%;overflow-wrap:break-word}.operator-top p{font-size:.92rem;max-width:100%;overflow-wrap:break-word}.operator-proof{display:grid;grid-template-columns:1fr;align-items:start}.operator-proof span{width:max-content;max-width:100%;font-size:.66rem;padding:6px 8px}.audit-head{flex-wrap:wrap}.leak{grid-template-columns:auto 1fr}.leak b{grid-column:2}.service-card,.price-card,.case-card,.pain-card,.benefit,.step,.target-card,.showroom-bridge{padding:22px}.sample-map{padding:20px}section{padding:64px 0}.trust{padding:28px;border-radius:26px}.footer-inner{display:grid}.footer-grid{grid-template-columns:1fr 1fr!important}}
     @media (prefers-reduced-motion:reduce){*,html{scroll-behavior:auto!important;transition:none!important;animation:none!important}.btn:hover{transform:none}}
   </style>
   <script type="application/ld+json">
@@ -186,6 +186,7 @@
             <div class="sample-check"><b>03</b><span>Only quote the package that matches the leak.</span></div>
           </div>
           <div class="sample-math">Example math: one saved $500 job − $299 Starter = $201 before operating costs. Use your real job value.</div>
+          <p style="margin:8px 0 0;font-size:.78rem;color:var(--muted);font-weight:650">Hypothetical example only. Actual ROI depends on your job value, close rate, traffic, and operations.</p>
         </div>
       </div>
     </section>
@@ -227,7 +228,27 @@
     </section>
   </main>
 
-  <footer><div class="wrap footer-inner"><div><b>YellowMarket LLC</b> — AI agency for local business growth.</div><div><a href="/showroom/">What You Get</a> · <a href="/audit/">Free leak map</a> · <a href="tel:+12027737868">(202) 773-7868</a> · <a href="/legal/">Legal</a> · <a href="/privacy/">Privacy</a></div></div>
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <b>YellowMarket LLC</b>
+        <p style="margin:6px 0 0;color:rgba(255,255,255,.5);font-weight:650;font-size:.9rem">AI agency for local business growth.</p>
+        <p style="margin:12px 0 0;font-size:.88rem"><a href="tel:+12027737868">(202) 773-7868</a> · <a href="mailto:contact@yellowmarket.store">contact@yellowmarket.store</a></p>
+      </div>
+      <div>
+        <span style="font-size:.7rem;font-weight:900;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:8px">Offer</span>
+        <div style="display:flex;flex-direction:column;gap:4px;font-size:.88rem"><a href="/audit/">Free leak map</a><a href="/showroom/">What You Get</a><a href="/#pricing">Pricing</a></div>
+      </div>
+      <div>
+        <span style="font-size:.7rem;font-weight:900;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:8px">Legal</span>
+        <div style="display:flex;flex-direction:column;gap:4px;font-size:.88rem"><a href="/legal/">Legal Notice</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+      </div>
+      <div>
+        <span style="font-size:.7rem;font-weight:900;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:8px">Services</span>
+        <div style="display:flex;flex-direction:column;gap:4px;font-size:.88rem"><a href="/services/ai-website-design/">Websites</a><a href="/services/google-business-profile-optimization/">Google</a><a href="/services/ai-lead-follow-up/">Follow-Up</a></div>
+      </div>
+    </div>
+    <div class="wrap" style="margin-top:18px;border-top:1px solid rgba(255,255,255,.08);padding-top:12px;font-size:.82rem;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>YellowMarket LLC · Wyoming, USA</span><span style="font-weight:600">No guaranteed results. Scope confirmed in writing before work starts.</span></div>
       <div class="footer-seo-links" style="width:100%;margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;font-weight:800;font-size:.9rem">
         <a href="/services/ai-website-design/">AI Website Design</a>
         <a href="/services/google-business-profile-optimization/">Google Business Profile</a>
