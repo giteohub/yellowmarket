@@ -5,6 +5,9 @@
   "contact": "contact@yellowmarket.store",
   "crawl_policy": "Public marketing pages may be crawled and summarized. Prospect demo pages should not be treated as approved client work unless explicitly linked from the homepage.",
   "important_pages": [
+    "https://yellowmarket.store/audit/",
+    "https://yellowmarket.store/legal/",
+    "https://yellowmarket.store/privacy/",
     "https://yellowmarket.store/services/ai-website-design/",
     "https://yellowmarket.store/services/google-business-profile-optimization/",
     "https://yellowmarket.store/services/ai-lead-follow-up/",

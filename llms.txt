@@ -1,6 +1,6 @@
 # YellowMarket
 
-> YellowMarket builds AI growth systems for local businesses and high-value professionals: conversion-focused websites, Google visibility, lead capture, booking flows, and high-leverage AI workflows for expensive moments like calls, quoting, intake, follow-up, and hiring.
+> YellowMarket helps local businesses fix lost-lead paths: weak websites, poor Google visibility, missed calls, and slow follow-up. The first step is a free leak map, followed by a fixed-scope pilot only if the upside is clear.
 
 ## Primary URL
 - https://yellowmarket.store/
@@ -14,7 +14,7 @@
 - AI Website + Local Trust System: mobile-first business website, service pages, trust signals, click-to-call/contact paths, and schema markup.
 - Google Visibility: Google Business Profile cleanup checklist, review capture flow, local SEO structure, and service-area clarity.
 - Lead Follow-Up Automation: missed-call text-back, instant intake forms, booking reminders, analytics/tracking, and simple CRM handoff.
-- High-Leverage AI Workflows: first-to-know alerts, quote-from-field workflows, client intake engines, after-hours front desk, and candidate shortlisting.
+- Paid-traffic-ready basics: clear offer, audit form, legal notice, privacy policy, favicon, sitemap, and public structured profiles.
 
 ## Typical process
 1. Free revenue leak audit.
@@ -24,6 +24,9 @@
 
 ## Useful pages
 - Homepage: https://yellowmarket.store/
+- Free leak map: https://yellowmarket.store/audit/
+- Legal notice: https://yellowmarket.store/legal/
+- Privacy policy: https://yellowmarket.store/privacy/
 - Premium system showroom: https://yellowmarket.store/showroom/
 - Trade business demo: https://yellowmarket.store/demos/mz-plumbing-4-you/
 
