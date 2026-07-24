@@ -17,8 +17,8 @@
 - Paid-traffic-ready basics: clear offer, audit form, legal notice, privacy policy, favicon, sitemap, and public structured profiles.
 
 ## Typical process
-1. Free revenue leak audit.
-2. Leak map ranked by likely impact and speed to fix.
+1. Free business review.
+2. Fix list ranked by likely impact and speed to implement.
 3. Fixed-scope pilot package.
 4. Launch, verify basics, then decide whether maintenance or deeper automation has ROI.
 
