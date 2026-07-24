@@ -105,7 +105,7 @@
     .cases{display:grid;grid-template-columns:1fr 1fr;gap:18px}.case-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 12px 36px rgba(17,24,39,.06)}.before-after{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.ba{border-radius:18px;padding:16px;background:#f9fafb;border:1px solid var(--line)}.ba b{font-family:'JetBrains Mono';font-size:.78rem;text-transform:uppercase}.ba.before b{color:var(--red)}.ba.after b{color:var(--green)}.ba p{margin:8px 0 0;color:var(--ink-2);font-size:.92rem}
     .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.price-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 12px 36px rgba(17,24,39,.06);position:relative}.price-card.featured{border:2px solid var(--teal);transform:translateY(-10px)}.badge{position:absolute;top:18px;right:18px;background:#ecfdf5;color:var(--teal-dark);border-radius:999px;padding:7px 10px;font-size:.72rem;font-weight:900}.price{font-family:'JetBrains Mono';font-size:2.25rem;font-weight:900;letter-spacing:-.06em;margin:18px 0 6px}.price small{font-size:.86rem;color:var(--muted)}.price-card ul{margin:20px 0 0;padding:0;list-style:none;display:grid;gap:12px}.price-card li{display:flex;gap:10px;color:var(--ink-2);font-weight:700}.price-card li::before{content:"✓";color:var(--green);font-weight:900}
     .pilot-box{margin-top:22px;padding:20px;border:1px dashed rgba(15,118,110,.35);border-radius:22px;background:#f0fdfa;color:#134e4a;font-weight:750}
-    .pricing-extras{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0 0}.pricing-extras div{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px}.pricing-extras p{color:var(--muted);font-weight:650;font-size:.92rem;margin:8px 0 0;line-height:1.4}
+    .pricing-extras{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0 0;align-items:start}.pricing-extras div{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column}.pricing-extras b{display:block;margin:6px 0 2px;font-size:1.05rem;min-height:2.8em}.pricing-extras p{color:var(--muted);font-weight:650;font-size:.92rem;margin:8px 0 0;line-height:1.4}
     .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:24px}.step-num{font-family:'JetBrains Mono';color:var(--orange);font-weight:900;margin-bottom:18px}
     .trust{background:#111827;color:#fff;border-radius:34px;padding:42px;display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:center}.trust p{color:rgba(255,255,255,.7);font-weight:650}.trust-list{display:grid;gap:12px}.trust-list div{padding:16px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);font-weight:750}.trust-list span{color:#5eead4;font-family:'JetBrains Mono';margin-right:8px}
     .cta{background:#0f766e;color:#fff;text-align:center}.cta h2{max-width:900px;margin:auto}.cta p{max-width:720px;margin:20px auto 0;color:rgba(255,255,255,.78);font-size:1.1rem;font-weight:650}.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.cta .btn-secondary{background:#fff;color:#0f766e}
@@ -214,17 +214,17 @@
       <div class="wrap pricing-extras">
         <div>
           <span class="mono" style="color:var(--orange);font-size:.82rem;font-weight:900">Maintenance</span>
-          <b style="display:block;margin:6px 0 2px;font-size:1.05rem">from $49<span class="mono" style="font-size:.78rem;color:var(--muted);font-weight:700">/mo</span></b>
+          <b>from $49<span class="mono" style="font-size:.78rem;color:var(--muted);font-weight:700">/mo</span></b>
           <p>Keep your site fast, updated, and monitored. Content edits, uptime checks, monthly health report. Cancel anytime.</p>
         </div>
         <div>
           <span class="mono" style="color:var(--orange);font-size:.82rem;font-weight:900">Custom project</span>
-          <b style="display:block;margin:6px 0 2px;font-size:1.05rem">Fixed quote</b>
+          <b>Fixed quote</b>
           <p>Describe what you need. We scope it, quote it, and confirm in writing before work starts. No surprises.</p>
         </div>
         <div>
           <span class="mono" style="color:var(--orange);font-size:.82rem;font-weight:900">Ongoing support</span>
-          <b style="display:block;margin:6px 0 2px;font-size:1.05rem">Included + add-on<span class="mono" style="font-size:.78rem;color:var(--muted);font-weight:700"> from $79/mo</span></b>
+          <b>Included + add-on<span class="mono" style="font-size:.78rem;color:var(--muted);font-weight:700"> from $79/mo</span></b>
           <p>First month included with Automation. Add priority support, review response templates, and monthly strategy calls.</p>
         </div>
       </div>
