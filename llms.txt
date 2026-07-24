@@ -38,5 +38,8 @@
 - https://yellowmarket.store/industries/plumbers/ — AI websites and local SEO for plumbers
 - https://yellowmarket.store/industries/roofers/ — AI websites and local SEO for roofers
 - https://yellowmarket.store/industries/hvac/ — AI websites and local SEO for HVAC companies
+- https://yellowmarket.store/industries/electricians/ — AI websites and local SEO for electricians
+- https://yellowmarket.store/industries/cleaners/ — AI websites and local SEO for cleaning services
+- https://yellowmarket.store/industries/dentists/ — AI websites and local SEO for dentists
 - https://yellowmarket.store/business.json — structured business profile
 - https://yellowmarket.store/openai.json — AI crawler profile
